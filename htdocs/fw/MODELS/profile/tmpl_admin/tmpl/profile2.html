@@ -1,0 +1,141 @@
+<div>
+    <ul class='breadcrumb'>
+        <li>
+            <a href='#'>Edit Record</a> <span class='divider'>/</span>
+        </li>
+
+    </ul>
+</div>
+
+<div class='row-fluid sortable'>
+    <div class='box span12'>
+        <!--Header-->
+        <div class='box-header well' data-original-title>
+            <h2><i class='icon-edit'></i> Form Elements</h2>
+            <div class='box-icon'>
+                <a href='#' class='btn btn-setting btn-round'><i class='icon-cog'></i></a>
+
+                <form action='' method='post' style='float: left;'>
+                    <input type='hidden' name='BLOCK_id' value='{$o->profile->uid}'>
+                    <input type='hidden' name='modName' value='profile'>
+                    <input type='hidden' name='methName' value='deleteUser'>
+                    <input type='submit' name='deleteRec' value='delete' class='btn btn-minimize btn-round'>
+                </form>
+                <a href='#' class='btn btn-minimize btn-round'><i class='icon-chevron-up'></i></a>
+                <a href='#' class='btn btn-close btn-round'><i class='icon-remove'></i></a>
+            </div>
+        </div>
+        <!--end Header-->
+
+        <!--Content-->
+        <div class='box-content' style='clear: both;'>
+            <form class='form-horizontal' action='' method='post'>
+                <!--
+                $o->profile->uid
+                $o->profile->bio
+                $o->profile->photo / 'RES/uploads/foto/default.jpg'
+                $o->profile->first_name
+                $o->profile->last_name
+                $o->profile->title
+                $o->profile->site
+                $o->profile->phone
+                $o->profile->email
+                -->
+                <input type='hidden' name='BLOCK_id' value='{$o->profile->uid}'>
+                <input type='hidden' name='methName' value='saveProfile'>
+                <input type='hidden' name='modName' value='profile'>
+
+                <fieldset>
+                    <legend>
+                        <!--user name-->
+                        {$o->profile->first_name} {$o->profile->last_name}
+                    </legend>
+                    <!--
+                    <div class='control-group'>
+                        <label class='control-label' for='idInp'>Title</label>
+                        <div class='controls'>
+                          <input class='input-xlarge focused span8' id='idInp'
+                                 type='text' name= '' value=''>
+                        </div>
+                    </div>
+                    -->
+
+
+
+                    <!--1- $o->profile->first_name-->
+                    <div class='control-group'>
+                        <label class='control-label' for='fName'>First Name</label>
+                        <div class='controls'>
+                          <input class='input-xlarge focused span8' id='fName'
+                                 type='text' name= 'first_name' value='{$o->profile->first_name}'>
+                        </div>
+                    </div>
+
+                    <!--2- $o->profile->last_name-->
+                    <div class='control-group'>
+                        <label class='control-label' for='lName'>Last Name</label>
+                        <div class='controls'>
+                          <input class='input-xlarge focused span8' id='lName'
+                                 type='text' name= 'last_name' value='{$o->profile->last_name}'>
+                        </div>
+                    </div>
+
+                    <!--3- $o->profile->title-->
+                    <div class='control-group'>
+                        <label class='control-label' for='uTitle'>Title</label>
+                        <div class='controls'>
+                          <input class='input-xlarge focused span8' id='uTitle'
+                                 type='text' name= 'title' value='{$o->profile->title}'>
+                        </div>
+                    </div>
+
+                    <!--4- $o->profile->site-->
+                    <div class='control-group'>
+                        <label class='control-label' for='uSite'>Site</label>
+                        <div class='controls'>
+                          <input class='input-xlarge focused span8' id='uSite'
+                                 type='text' name= 'site' value='{$o->profile->site}'>
+                        </div>
+                    </div>
+
+                    <!--5- $o->profile->phone-->
+                    <div class='control-group'>
+                        <label class='control-label' for='uPhone'>Phone</label>
+                        <div class='controls'>
+                          <input class='input-xlarge focused span8' id='uPhone'
+                                 type='text' name= 'phone' value='{$o->profile->phone}'>
+                        </div>
+                    </div>
+
+                    <!--6- $o->profile->email-->
+                    <div class='control-group'>
+                        <label class='control-label' for='uEmail'>Email</label>
+                        <div class='controls'>
+                          <input class='input-xlarge focused span8' id='uEmail'
+                                 type='text' name= 'email' value='{$o->profile->email}'>
+                        </div>
+                    </div>
+
+                    <!--7- $o->profile->bio-->
+                    <div class='control-group'>
+                        <label class='control-label' for='uBio'>Biography</label>
+                        <div class='controls'>
+                            <textarea class='ckeditorr' id='uBio'
+                              rows='6' style='height: 800px;'
+                              name='content'
+                            >
+                                {$o->profile->bio}
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <!--$o->profile->photo / 'RES/uploads/foto/default.jpg'-->
+
+                </fieldset>
+            </form>
+        </div>
+        <!--end Content-->
+    </div>
+</div>
+
+        

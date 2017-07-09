@@ -1,0 +1,54 @@
+
+sanitize_default: &id001
+  - "stripTags"
+  - "realEscapeString"
+
+#add ITEMS
+addItemForm:
+  name_en:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "Empty Page Name", mess: "Please enter a page name"}
+      1: {check: "alpha", type: "error", name: "Page Name", mess: "Containes unallowed characters"}
+  type: []
+  idP:
+    postName: "idParent"
+  idM: []
+
+
+#update ITEMS
+updateItemForm:
+  name_en:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "Empty Page Name", mess: "Please enter a page name"}
+      1: {check: "alpha", type: "error", name: "Page Name", mess: "Containes unallowed characters"}
+  type: []
+  idP:
+    postName: "idParent"
+    sanitize: *id001
+    validation:
+      0: {check: "numeric", type: "error", name: "No reference", mess: "Something went wrong"}
+  id:
+    postName: itemId
+    sanitize: *id001
+    validation:
+      0: {check: "numeric", type: "error", name: "No reference", mess: "Something went wrong"}
+  idM: []
+
+updateItemFormOption:
+  directLink:
+    validation:
+      0: {check: "url", type: "error", name: "Error Url", mess: "Your direct link is not a valid url"}
+  editable: []
+
+#delete Item form
+deleteItemForm:
+  idItem:
+    sanitize: *id001
+    validation:
+      0: {check: "numeric", type: "error", name: "No reference", mess: "Something went wrong"}
+
+
+
+

@@ -1,0 +1,37 @@
+<div class='block overflow'>
+
+	 <div class='textColumnBig right ' >
+        <!--<p>Our archive contains Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it to make
+            a type specimen book.
+        </p>-->
+        <div class='archiveDesc'>
+           <div class='textDesc desc'>
+
+            </div>
+        </div>
+     </div> <!-- end description -->
+    <div class='LeftColumnSmall blogsHead space' style='width: 50%;'>
+        Search results
+        <br>
+        <span style='font-size: 15px; font-weight: normal; '>
+            Search words: <i>".implode(' ', $co->searchWords)."</i>
+        </span>
+
+    </div>
+
+   <div class='clearfix'></div>
+
+</div>
+
+<div class='block space overflow allrecords'>
+
+   ".(count($co->records) == 0 ? "<b>No records found</b>" :
+         $this->Render_itemsFromPath($co->records, $o,
+         $o->modDirPub."tmpl_bsea/tmpl/searchPrevRecord.html")
+   )."
+
+</div>
+    <!-- end archivemain -->

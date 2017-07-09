@@ -1,0 +1,230 @@
+<!--Settings-->
+<div class='box' id='article-settings' style='display: none;'>
+    <div class='box-header well'>
+        <h2>
+            <i class='icon-cog'></i>
+            Settings
+        </h2>
+        <div class='box-icon'>
+            <a href='#' class='btn btn-round' onclick='fmw.toggle(\"#article-settings\"); return false;'>
+                <i class='icon-remove'></i>
+            </a>
+        </div>
+    </div>
+    <div class='box-content'>
+        <div class='row-fluid'>
+            <div class='span5'>
+                <!--Country-->
+                <div class='control-group'>
+                    <label class='control-label' >Country</label>
+                    <div class='controls'>
+                      <input class='input-xlarge focused'
+                             type='text' value='{$co->country}' name='country'>
+                    </div>
+                </div>
+                <!--City-->
+                <div class='control-group'>
+                    <label class='control-label' >City</label>
+                    <div class='controls'>
+                        <input class='input-xlarge focused'
+                             type='text' value='{$co->city}' name='city'>
+                    </div>
+                </div>
+                <!--Folders-->
+                <div class='control-group'>
+                    <label class='control-label' for='selectError3'>Folder</label>
+                    <div class='controls'>
+                        <select id='selectError3' name='idFolder'>
+                            ".$this->Render_itemsFromStr($o->foldersArr, $o,"
+                                <option value='{~ao->value}'
+                                    `.(~co->idFolder != ~ao->value ? `` : ` selected = 'selected' `).`
+                                        >
+                                    {~ao->name}
+                                </option>
+                            ")."
+                        </select>
+                    </div>
+                </div>
+                ".(  !$o->user->rights['article_edit'] || !$co->blogCategories ? '' : "
+                <!--Category-->
+                <div class='control-group'>
+                    <label class='control-label' for='selectError6'>Category</label>
+                    <div class='controls'>
+                        <select id='selectError6' name='idCat'>
+                            ".$this->Render_itemsFromStr($co->blogCategories, $o, "
+                                   <option value='{~ao->idCat}'
+                                           `.(~ao->idCat != ~co->idCat ? '' :  'selected' ).`>
+                                       {~ao->catName}
+                                   </option>
+                            ")."
+                        </select>
+                    </div>
+                </div>
+                ")."
+                <!--Format-->
+                <div class='control-group'>
+                   <label class='control-label' for='selectError7'>Article Type</label>
+                   <div class='controls'>
+                       <select id='selectError7' name='idFormat'>
+                           ".$this->Render_itemsFromStr($o->formats, $o, "
+                               <option value='{~ao->idFormat}'
+                                   `.(~ao->format != ~co->format ? '' :  'selected' ).` >
+                                      {~ao->format}
+                               </option>
+                           ")."
+                       </select>
+                   </div>
+                </div>
+                <!--Tags-->
+                <div class='control-group'>
+                  <label class='control-label' >Tags</label>
+                  <div class='controls'>
+                    <input class='input-xlarge focused'
+                           type='text' value='{$co->tagsName}' name='recordTags'>
+                  </div>
+                </div>
+                <!--Preview Lead-->
+                <div class='control-group' >
+                     <label class='control-label' for='recordLeadSec'>Preview Lead</label>
+                     <div class='controls'>
+                       <textarea name='leadSec' id='recordLeadSec' class='leadSec' >
+                           {$co->leadSec}
+                       </textarea>
+                     </div>
+                </div>
+                <!--Scripts-->
+                ".(!$o->user->rights['article_edit'] ? '' : "
+                    <br>
+                    <div class='control-group' >
+                        <label class='control-label' for='recordscripts'>Scripts</label>
+                        <div class='controls'>
+                          <textarea name='scripts' id='recordscripts' class='scripts' >{$co->scripts}</textarea>
+                          <div class='well' id='scriptTips' style='float: right; display: none;'>
+
+                             <p> Some tips for the scripts:</p>
+                              <pre>
+<code>
+var i = 'foo' ;
+j = 'bar';
+
+$(document).ready(function(){
+//calling the function
+doSomething(2,3);
+});
+
+function doSomething(prop1, prop2){
+/*Your logic here; */
+}
+
+------------------------------------------
+head.js('ScriptTobeIncludedpath.js');
+art.i = 'foo';
+art.j = 'bar';
+art.doSomething = function(prop1, prop2){
+/*Your logic here; */
+}
+
+head.ready(function(){
+//calling the function
+art.doSomething(2,3);
+});
+</code>
+1. including scripts
+- note that there is no need for <code> script</code> tags for your code,
+those tags will be added automaticaly. .
+-  to include scripts use the head.js API, as shown in the
+following example.
+
+2. ready
+-  use head.ready function instead of <code>$(document).ready();</code>
+the latter can only be used if jQuery has been loaded,
+while head.js will surely be loaded and working.
+
+3. use the object named 'art' and declare all your variables
+and functions as its properties. This way we minimize the
+risk of  having too many global variables that can collide
+with each other.
+
+4. also notice that all the variables and functions are
+declared first, and AFTER that the function is called.
+As a good practice and for keeping the code consistency,
+please try to do the same.
+                              </pre>
+                          </div>
+                        </div>
+                    </div>
+                ")."
+            </div>
+            <div class='span5'>
+
+                <!--Publish Date-->
+                ".(!$co->publishDate || !$o->user->rights['article_edit'] ? '' : "
+                   <div class='control-group'>
+                     <label class='control-label' for='date01'>Publish Date</label>
+                     <div class='controls'>
+                       <input type='text' class='input-xlarge datepicker' id='date01'
+                              value='{$co->publishDate}' name='publishDate'>
+                     </div>
+                   </div>
+                ")."
+                <!--Authors / users-->
+                <div class='control-group'>
+              <label class='control-label' for='selectError4'>Authors</label>
+              <div class='controls'>
+                <select id='selectError4' name='authors[]' multiple = 'multiple' style='height: 200px;'>
+                    ".(!$co->uidsCSV
+                        ? $this->Render_itemsFromStr($co->users, '',
+                            "<option value='{~ao->id}'>{~ao->name}</option>"
+                          )
+                        : $this->Render_itemsFromStr($co->users, $co,
+                            "<option value='{~ao->id}'
+                              `.(!isset(~o->uidsKeys[~ao->id]) ? '' : 'selected').` >
+                                {~ao->name}
+                            </option>"
+                          )
+                    )
+                    ."
+                </select>
+              </div>
+            </div>
+                <!--Lead author-->
+                <div class='control-group'>
+                    <label class='control-label' for='selectError5'>Main Author</label>
+                    <div class='controls'>
+                        <select id='selectError5' name='uidRec'>
+                            <option value = '{$co->uidRec}' selected>
+                                {$co->fullName}
+                            </option>
+                            ".$this->Render_itemsFromStr($co->users, '',"
+                                <option value='{~ao->id}'>{~ao->name}</option>
+                            ")."
+                        </select>
+                    </div>
+                </div>
+
+                <div class='control-group'>
+                    <label class='control-label'>Html Page</label>
+                    <div class='controls'>
+                       <input type='file' name='resHtml' value=''/>
+                    </div>
+                </div>
+                <div class='control-group'>
+                    <label class='control-label' >Direct Link</label>
+                    <div class='controls'>
+                       <input type='text' name='directLink' value='{$co->directLink}'/>
+                    </div>
+                </div>
+                <div class='control-group'>
+                    <label class='control-label' >Skip front page</label>
+                    <div class='controls'>
+                       <input type='checkbox' name='skipIndex' ".(
+                              intval($co->skipIndex) === 1 ? 'checked' : ''
+                       )."/>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

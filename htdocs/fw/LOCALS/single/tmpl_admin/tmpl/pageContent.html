@@ -1,0 +1,38 @@
+<div class='row-fluid sortable'>
+    <div class='box span12'>
+        <div class='box-header well' data-original-title>
+            <h2>
+                <i class='icon-edit'></i>
+                {$o->nodeResFile}
+            </h2>
+            <div class='box-icon'>
+                <input type='submit' name='saveArt' value='Save Changes' form='page-edit' class='btn btn-round'>
+                <a href='?route=genAdmin-listItems' class='btn btn-round'>
+                    <i class='icon-remove'></i>
+                </a>
+            </div>
+        </div>
+        <div class='box-content' style='clear: both;'>
+           <form class='form-horizontal' action='' method='post' id='page-edit'>
+               <input type='hidden' name='BLOCK_id' value='{$o->nodeResFile}'>
+               <input type='hidden' name='methName' value='savePage'>
+               <input type='hidden' name='modName' value='single'>
+
+               <fieldset>
+                    <div class=' row-fluid'>
+                        <div class='span9'>
+                           <p class='btn btn-round-half'>Page content</p>
+                           <textarea class='ckeditorr' id='textarea2'
+                                    rows='6' style='height: 800px;'
+                                    name='desc'
+                                    data-cketoolbar ='admin'
+                                  >
+                               ".$this->Render_ModulefromRes($o, $o->nodeResFile )."
+                          </textarea>
+                        </div>
+                    </div>
+               </fieldset>
+           </form>
+        </div>
+    </div>
+</div>

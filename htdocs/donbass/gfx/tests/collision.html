@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="../js/d3.js"></script>
+    <!--<link type="text/css" rel="stylesheet" href="style.css"/>-->
+    <style type="text/css">
+
+circle {
+  stroke: #000;
+  stroke-opacity: .5;
+}
+svg {
+	background-color: #eee;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="body">
+      <div id="footer">
+		  <a href="#" id="sw">new size</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+var w = 800, h = 600;
+
+
+var walls = {right:660, top:0, bottom:540};
+var bubble = {min:40, max:70, spacer:3};
+var nodes = d3.range(22).map(function(d,i) {
+	switch(i) {
+		case 0:
+			return {radius: 0, fixed:true, x:walls.right+h, y:h/2, position:'right'};
+			break;
+		case 1:
+			return {radius: 0, fixed:true, x:w/2, y:walls.top - w, position:'top'};
+			break;
+		case 2:
+			return {radius: 0, fixed:true, x:w/2, y:walls.bottom + w, position:'bottom'};
+			break;
+		default:
+			return {radius: bubble.min + Math.random() * (bubble.max - bubble.min)};
+
+	}
+
+});
+var color = d3.scale.category10();
+
+var force = d3.layout.force()
+    .gravity(0.035)
+    .charge(12)
+//    .charge(function(d, i) { return i ? 0 : -1000; })
+    .nodes(nodes)
+    .size([walls.right*1.6, h-2*(20+12+4)]);//max bubble size + 4 padding
+
+
+force.start();
+for (var i = 0; i < 10; ++i)
+	force.tick();
+
+/*for(var n in force.nodes()){
+	if(force.nodes()[n].index > 2) {
+		force.nodes()[n].px = force.nodes()[n].x =
+			Math.min(walls.right - (bubble.max + bubble.spacer), force.nodes()[n].x);
+		force.nodes()[n].py = force.nodes()[n].y =
+			Math.min(walls.bottom - (bubble.max + bubble.spacer),
+				Math.max(walls.top + (bubble.max + bubble.spacer), force.nodes()[n].y));
+	} //else
+		console.log(force.nodes()[n]);
+}*/
+//force.start();
+
+var svg = d3.select("#body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+/*svg.append("svg:rect")
+		.attr("x", 20+12+4)
+		.attr("y", 20+12+4)
+		.attr("width", w-2*(20+12+4))
+		.attr("height", h-2*(20+12+4))
+		.attr("fill", "#ddd");*/
+
+
+svg.append("svg:g")
+		.attr("transform", "translate("+String(20+12+4)+","+String(20+12+4)+")")
+	.append("svg:line")
+		.attr("x1", walls.right)
+		.attr("x2", walls.right)
+		.attr("y1", 0)
+		.attr("y2", h)
+		.attr("style", "stroke:red;stroke-width:2");
+
+svg.select("g").selectAll("circle")
+    .data(nodes)
+  .enter().append("svg:circle")
+    .attr("r", function(d) { return (d.radius || bubble.spacer) - bubble.spacer; })
+    .attr("idx", function(d) { return d.index; })
+    .style("fill", function(d, i) { return color(i); });
+
+force.on("tick", onTick);
+
+function onTick() {
+  var q = d3.geom.quadtree(nodes),
+      i = 2,
+      n = nodes.length;
+
+  while (++i < n) {
+    q.visit(collide(nodes[i]));
+  }
+
+  svg.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+//	  console.log("--- end step");
+};
+
+//onTick(); force.tick();
+
+
+d3.select("a#sw").on("click", switchSize);
+function switchSize(){
+	nodes.forEach(function(node){
+		if(node.radius)
+			node.radius = bubble.min + Math.random() * (bubble.max - bubble.min);
+	});
+	svg.selectAll("circle")
+		.transition().duration(600)
+		.attr("r", function(d) { return (d.radius || bubble.spacer) - bubble.spacer; });
+	force.start();
+}
+
+/*svg.on("mousemove", function() {
+  var p1 = d3.mouse(this);
+  root.px = p1[0];
+  root.py = p1[1];
+  force.resume();
+});*/
+
+function collide(node) {
+  var r = node.radius + bubble.spacer*4,
+      nx1 = node.x - r,
+      nx2 = node.x + r,
+      ny1 = node.y - r,
+      ny2 = node.y + r;
+  return function(quad, x1, y1, x2, y2) {
+//	console.log(node.index+":", x1, nx2, "---", x2, nx1);
+    if (quad.point && (quad.point !== node)) {
+	  if(quad.point.radius) {
+		var x = node.x - quad.point.x,
+			y = node.y - quad.point.y,
+			l = Math.sqrt(x * x + y * y);
+		var r = node.radius + quad.point.radius;
+
+		if (l < r) {
+		  l = (l - r) / l * .5; x *= l;
+		  node.x = Math.min(node.x - x, walls.right - node.radius);
+		  node.y -= y *= l;
+		  quad.point.x = Math.min(quad.point.x + x, walls.right - node.radius);
+		  quad.point.y += y;
+		}
+//		if(!contained(quad.point))
+//			console.log("breaks on quad", quad.point.index, "child of", node.index);
+//		if(!contained(node))
+//			console.log("breaks on node", node.index, "with child", quad.point.index);
+
+	  } else {
+//		  console.log("else", quad.point.position);
+		  if(node.x + node.radius > walls.right + bubble.spacer && quad.point.position == 'right') {
+			  node.x = walls.right - node.radius;
+		  } else if(node.y - node.radius < walls.top && quad.point.position == 'top') {
+			  node.y = walls.top + node.radius;
+		  } else if(node.y + node.radius > walls.bottom && quad.point.position == 'bottom') {
+			  node.y = walls.bottom - node.radius;
+		  }
+	  }
+    }
+    return x1 > nx2 || x2 < nx1
+        || y1 > ny2 || y2 < ny1;
+  };
+}
+
+function contained(node) {
+	return node.x + node.radius < walls.right;
+}
+    </script>
+  </body>
+</html>

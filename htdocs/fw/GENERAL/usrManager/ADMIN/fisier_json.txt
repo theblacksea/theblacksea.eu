@@ -1,0 +1,9 @@
+Buffer contents: 
+Array
+(
+)
+
+
+ UPDATE auth_users_datatables SET  = '' WHERE uid = ''; 
+
+

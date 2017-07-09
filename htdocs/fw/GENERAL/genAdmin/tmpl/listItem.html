@@ -1,0 +1,52 @@
+<tr id='item_{$ao->id}'>
+   <td>{$ao->id}</td>
+    <td>{$ao->poz}</td>
+    <td>{$ao->childrenNo}</td>
+   <td style='width: 600px;'>
+       ".(isset($ao->hrefSubtree)
+            ? "<a href='$ao->hrefSubtree' >{$ao->name_en}</a>"
+            : "{$ao->name_en}"
+       )."
+   </td>
+   <td class='center'>{$ao->type}</td>
+   <td class='center'>
+       ".($ao->parents ?: "<i class='icon-minus'></i>")."
+   </td>
+   <td class='center' style='text-align: center;'>
+       ".($ao->menus ? "<i class='icon-ok'></i>" : "<i class='icon-minus'></i>")."
+   </td>
+
+   <td class='center'>
+       <form action='' method='post'>
+           <a class='btn btn-mini updateItem' href='#'
+              data-show='form-updateItem'
+              data-id = '{$ao->id}'
+              data-name = '{$ao->name_en}'
+              data-type = '{$ao->type}'
+              data-parents = '{$ao->parentsId}'
+              data-menus = '{$ao->menus}'
+              data-options = '".($ao->opt ?: "{}" )."'
+
+           >
+              <i class='icon-cog'></i>
+           </a>
+
+           ".( $ao->options && $ao->options->editable
+                ? "<a class='btn  btn-mini btn-inactive ' href = '#' >
+                      <i class='icon-edit icon-white'></i>
+                  </a>"
+                : "<a class='btn  btn-mini  btn-success' href = '{$ao->editHref}'>
+                      <i class='icon-edit icon-white'></i>
+                  </a>"
+           )."
+
+           <a class='btn btn-danger btn-mini deleteItem' href='#'
+              data-message='Are you sure you want to delete this page?'>
+               <i class='icon-trash icon-white'></i>
+           </a>
+           <input type='hidden' name='idItem' value='{$ao->id}'>
+           <input type='hidden' name='methName' value='deleteItem'>
+           <input type='hidden' name='modName' value='genAdmin'>
+       </form>
+   </td>
+</tr>

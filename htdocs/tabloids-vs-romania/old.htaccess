@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /var/www/virtual/theblacksea.eu/htdocs/tabloids-vs-romania/.htpasswd
+Require valid-user

@@ -1,0 +1,28 @@
+<div class='searchPrevRec record'>
+
+       <div class='imageColumnMeta'>
+           <div class='imageColumnHead fullwidth'>
+               <a href='{$ao->record_href}' class='{$ao->statusPublish}' style='font-size: 14px;'>
+                   {$ao->idRecord} |  {$ao->title}
+               </a>
+           </div>
+           <span class='imageColumnLocation blue' style='display: inline-block; margin-right: 10px;'>
+              ".($ao->city ? $ao->city : 'town')."
+              ,
+              ".($ao->country ? $ao->country : 'country')."
+           </span>
+           <a href='$ao->authorHref'>{$ao->fullName}</a>
+          ".(count($ao->authors) == 0 ? '' :
+            $this->Render_itemsFromStr($ao->authors,'', "
+               , <a href='~ao->authorHref'>{~ao->fullName}</a>
+
+          "))."
+           <br>
+           {$ao->lead}
+
+           <br>
+           <br>
+           {$ao->content}
+
+       </div>
+   </div>

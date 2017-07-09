@@ -1,0 +1,12 @@
+/protected/etc/config.production.php
+/protected/etc/config.development.php
+/protected/var/db/*
+/protected/var/etc/*
+/protected/var/log/*
+/protected/var/trees/*
+/protected/var/tmp/*
+protected/var/ClassLoader.save.php
+
+.dat
+htdocs/lists
+htdocs/RES

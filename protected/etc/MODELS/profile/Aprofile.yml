@@ -1,0 +1,105 @@
+template: admin
+
+sanitize_default: &id001
+  - "stripTags"
+  - "realEscapeString"
+
+post_addUser:
+  bio:
+    validation:
+      0: {check: "notEmpty", type: "warning", name: "Biography", mess: "You should write something about you"}
+  photo: []
+  first_name:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "Empty First Name", mess: "Please enter your name"}
+      1: {check: "alpha", type: "error", name: "First Name", mess: "Containes unallowed characters"}
+  last_name:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "Empty Last Name", mess: "Please enter your last name"}
+      1: {check: "alpha", type: "error", name: "Last Name", mess: "Containes unallowed characters"}
+  title:
+    sanitize: *id001
+    validation:
+      0: {check: "alpha", type: "error", name: "Title", mess: "Containes unallowed characters"}
+  site:
+    sanitize: *id001
+  phone:
+   sanitize: *id001
+   validation:
+      0: {check: "phone", type: "error", name: "Phone", mess: "Containes unallowed characters"}
+  email:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "Email", mess: "Must have an email declared"}
+      1: {check: "email", type: "error", name: "Email", mess: "Containes unallowed characters"}
+  password:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "Password", mess: "Must have a password"}
+  cid: []
+  uname:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "User Name", mess: "Must have a user name"}
+      1: {check: "alphanum", type: "error", name: "User Name", mess: "Containes unallowed characters"}
+
+
+
+post_profile:
+  uid:
+    postName: "BLOCK_id"
+    fbk: {type: "error", name: "Not yours", mess: "This is not your profile and you are not allowed to edit it!!"}
+  bio:
+    validation:
+      0: {check: "notEmpty", type: "warning", name: "Biography", mess: "You should write something about you"}
+  photo: []
+  first_name:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "Empty First Name", mess: "Please enter your name"}
+      1: {check: "alpha", type: "error", name: "First Name", mess: "Containes unallowed characters"}
+  last_name:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "Empty Last Name", mess: "Please enter your last name"}
+      1: {check: "alpha", type: "error", name: "Last Name", mess: "Containes unallowed characters"}
+  title:
+    sanitize: *id001
+    validation:
+      0: {check: "alpha", type: "error", name: "Title", mess: "Containes unallowed characters"}
+  site:
+    sanitize: *id001
+  phone:
+   sanitize: *id001
+   validation:
+      0: {check: "phone", type: "error", name: "Phone", mess: "Containes unallowed characters"}
+  email:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "Email", mess: "Must have an email declared"}
+      1: {check: "email", type: "error", name: "Email", mess: "Containes unallowed characters"}
+
+
+post_adminProfile:
+  cid: []
+  uname:
+    sanitize: *id001
+    validation:
+      0: {check: "notEmpty", type: "error", name: "User Name", mess: "Must have a user name"}
+      1: {check: "alphanum", type: "error", name: "User Name", mess: "Containes unallowed characters"}
+
+
+post_adminActiveStat:
+  uid: "BLOCK_id"
+  activeStatus: ""
+
+post_adminDelete:
+  uid: "BLOCK_id"
+
+fbks:
+  noRights: {type: "error" , name: "Right violation", mess: "You do not have permission to change this kind of properties, so stop!!!"}
+  emptyUname: {type: "error" , name: "Empty user name", mess: "You must introduce a user name"}
+  takenUname: {type: "error" , name: "Taken user name", mess: "The user name is already taken"}
+  #fbk_noRights: {type: , name: '', mess:}

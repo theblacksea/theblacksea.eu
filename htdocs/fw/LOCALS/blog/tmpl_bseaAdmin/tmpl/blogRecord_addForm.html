@@ -1,0 +1,23 @@
+<!--<div class='hidden well' id='form-addRecord' >-->
+<div class='well' id='form-addRecord' style='display: none !important; '>
+    <form method='post' action='' style='margin: 0px;'>
+        <div class='ib' >
+            <p>Post Title</p>
+            <input type='text' name='title' value=''  class='ivy-light addArticle' placeholder='article title' />
+        </div>
+        <div class='ib' >
+            <p>Post Type</p>
+            <select name='idFormat'>
+                ".$this->Render_itemsFromStr($o->formats, '',
+                " <option value='{~ao->idFormat}'>{~ao->format}</option>"
+                )."
+
+            </select>
+        </div>
+        <div class='ib' style='vertical-align: bottom; margin-bottom: 10px; margin-left: 10px;'>
+            <input type='submit' name='addRecord' value='add Record' class='btn  btn-round' >
+            <input type='hidden' name='methName' value='addRecord'>
+            <input type='hidden' name='modName' value='blog'>
+        </div>
+    </form>
+</div>

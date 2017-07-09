@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g>
+	<defs>
+		<circle id="SVGID_29_" cx="50" cy="50" r="50"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_29_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<rect x="-20.384" fill="#E30A17" width="150" height="100"/>
+		<g>
+			<path fill="#FFFFFF" d="M38.991,70c-11.046,0-20-8.954-20-20s8.954-20,20-20c5.912,0,11.224,2.566,14.886,6.644
+				C49.446,29.646,41.636,25,32.741,25c-13.807,0-25,11.193-25,25s11.193,25,25,25c8.895,0,16.704-4.646,21.136-11.644
+				C50.215,67.434,44.903,70,38.991,70z"/>
+			<polygon fill="#FFFFFF" points="69.808,50 75.146,42.653 66.508,45.459 61.17,38.112 61.17,47.193 52.533,50 61.17,52.807 
+				61.17,61.888 66.508,54.541 75.146,57.348 			"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Mapping illegal arms in Europe - EIC</title>
+
+<script src="js/leaflet.js"></script>
+<script src="js/miniMap2.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/leaflet.css">
+<link rel="stylesheet" type="text/css" href="css/miniMap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body class="ini">
+	<div class="container">
+		<div id="navigation">
+			<h1></h1>
+			<ul id="main_elems"></ul>
+			<div class="line_container">
+				<div class="line trans"></div>
+			</div>
+			<div id="smart_nav">
+				<div id="see_nav"><img src="img/see-nav.png" /></div>
+				<div id="header_nav">
+					<div class="arr_nav trans" id="arr_prev"><span>&#10092;</span></div>
+					<div id="smart_ht"><h2 class="title_point"></h2></div>
+					<div class="arr_nav trans" id="arr_next"><span>&#10093;</span></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="viz">
+            <div id="shadow"><img src="img/sombra.png" /></div>
+			<div id="info_point">
+				<div id="info_point_container">
+					<h2 class="title_point" ></h2>
+					<div id="txt_point" class="info_div"><p></p></div>
+					<div id="img_point" class="info_div">
+						<div id="img_container">
+							<span class="helper"></span>
+							<img src="img/info_weapon.png" />
+							<span id="gimme_info_weapon" class="trans" ></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="map" class="cb trans"></div>
+		</div>
+		
+		<div id="full_weapon" class="trans">
+			<div id="full_container_center">
+				<div id="full_container_ficha">
+					<span id="close_weapon"></span>
+					<div id="full_img_container">
+						<img />
+					</div>
+					<div id="info_weapon" class="trans">
+						<p id="info_model"><span class="info_prop"></span><span class="info_value"></span></p>
+						<p id="info_snumber"><span class="info_prop"></span><span class="info_value"></span></p>
+						<p id="info_capacity"><span class="info_prop"></span><span class="info_value"></span></p>
+						<p id="info_large"><span class="info_prop"></span><span class="info_value"></span></p>
+					</div>
+					<div class="swipe_nav" id="swipe_nav_prev"><span>&#10092;</span></div>
+					<div class="swipe_nav" id="swipe_nav_next"><span>&#10093;</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/swipe.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<div class='row-fluid sortable'>
+    <div class='box span12'>
+        <div class='box-header well' data-original-title>
+            <h2><i class='icon-user'></i> Users</h2>
+            <div class='box-icon'>
+                <a href='#' class='btn btn-setting btn-round'><i class='icon-cog'></i></a>
+                <a href='#' class='btn btn-minimize btn-round'><i class='icon-chevron-up'></i></a>
+                <a href='#' class='btn btn-close btn-round'><i class='icon-remove'></i></a>
+            </div>
+        </div>
+        <div class='box-content'>
+            <table class='table table-striped table-bordered bootstrap-datatable datatable'>
+                <thead>
+                    <tr>
+                        <th style='width: 100px;'>Pic</th>
+                        <th >Name</th>
+                        <th >Title</th>
+                        <th >Actions</th>
+                    </tr>
+                </thead>
+              <tbody>
+              ".$this->Render_itemsFromStr(array_merge($o->profiles, $o->editors), $o, "
+                    <tr `.( ~o->user->uid != ~ao->uid ? '' : `
+                            class = 'table-current-user'
+                        `).`
+                    >
+                        <td>
+                            <div class='about-photo-containter-mini'>
+                                <img style='width:100%' src='".BASE_URL."{~ao->photoSrc}' class='uclass{~ao->cid}' />
+                            </div>
+                        </td>
+                        <td class='center'>
+                            {~ao->fullName}
+                        </td>
+                        <td class='center'>
+                            `.( ~ao->title ? ~ao->title : 'Title'  ).`
+                        </td>
+
+                        <td class='center'>
+                            `.(~ao->editStatus ? `` : `
+                                <a class='btn btn-info btn-mini' href='{~ao->hrefProfile}'>
+                                      <i class='icon-edit icon-white'></i>
+                                      Edit
+                                </a>
+                            `).`
+                        </td>
+                    </tr>
+              ")."
+              </tbody>
+            </table>
+        </div>
+    </div><!--/span-->
+</div><!--/row-->
+

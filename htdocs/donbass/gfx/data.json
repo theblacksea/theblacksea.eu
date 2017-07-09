@@ -1,0 +1,214 @@
+{
+	"countries": [
+		{
+			"country": "ALBANIA",
+			"iso": "AL",
+			"population": "2821977",
+			"total": "5265",
+			"convicted": "3026",
+			"detained": "2163",
+			"capacity": "4537",
+			"female": "91",
+			"type": {
+				"murder": "1170 (Murder)",
+				"rape": "70 (Rape)",
+				"theft": "717 (Theft)",
+				"traffic": "69 (Maybe) Exploitation of Prostitutes",
+				"drugs": "589  (Drugs)",
+				"financial": "38  (Fraud)"
+			}
+		},
+		{
+			"country": "BOSNIA AND HERZEGOVINA",
+			"iso": "BA",
+			"population": "3791622",
+			"total": "2930",
+			"convicted": "2623",
+			"detained": "307",
+			"capacity": "2725",
+			"female": "47",
+			"type": {
+				"murder": "442 (Murder, Attempted Murder + Agravated Murder + Manslaughter)",
+				"rape": "Not Avail",
+				"theft": "1027 (Robbery +Offenses against Rights of Poperty + Forest Theft + Theft + Aggravated and Grand Theft)",
+				"traffic": "10 (Human Trafficking)",
+				"drugs": "309 (Drug Offenses)",
+				"financial": "49 Fraudulent Transactions Related to Contracts and Trade + Embexxlement and Larceny + Fraud + Money Laundering and Tax Evasion + Counterfitting Currenty) "
+			}
+		},
+		{
+			"country": "CZECH REPUBLIC",
+			"iso": "CZ",
+			"population": "10513800",
+			"total": "17206",
+			"convicted": "14494",
+			"detained": "2272",
+			"capacity": "20928",
+			"female": "1008",
+			"type": {
+				"murder": "1119  (Killing + Murder)",
+				"rape": "495  (Rape)",
+				"theft": "11573  (Theft + Robbery)",
+				"traffic": "100  (Restriction of Human Freedom)",
+				"drugs": "2561",
+				"financial": "4087  (Tax Evasion + Unauthorized Possession of a Credit Card + Fraud + Credit Fraud)"
+			}
+		},
+		{
+			"country": "HUNGARY",
+			"iso": "HU",
+			"population": "9906000",
+			"total": "18197",
+			"capacity": "12584",
+			"female": "(between 1273 - 1256)",
+			"type": {
+				"murder": "1240 (Homicide)",
+				"rape": "242 (Rape)",
+				"theft": "5828 (Theft + Robbery + Despoilment)",
+				"traffic": "104 (Human Trafficking)",
+				"drugs": "358 (Drug Abuse)",
+				"financial": "1101  (Fraud + Embezzlement + Tax Fraud)"
+			}
+		},
+		{
+			"country": "LATVIA",
+			"iso": "LV",
+			"population": "2003900",
+			"total": "5105",
+			"capacity": "7844 (accoreing to prisonstudies.org)",
+			"female": "365",
+			"type": {
+				"murder": "721 (Murder + Assassintion + Very Hard Assassination)",
+				"rape": "271 (Rape + Violent Rape)",
+				"theft": "2469 (Theft + Robbery)",
+				"traffic": "1 (Trafficking of Persons)",
+				"drugs": "1121 (Drug Dealing)",
+				"financial": "411"
+			}
+		},
+		{
+			"country": "LITHUANIA",
+			"iso": "LT",
+			"population": "2941953",
+			"total": "9384",
+			"convicted": "8172",
+			"detained": "1212",
+			"capacity": "9505",
+			"female": "433",
+			"type": {
+				"murder": "1928.59 (Deliberate Murder)",
+				"rape": "482.14  (Rape)",
+				"theft": "1593.54  (Theft + Robbery)",
+				"traffic": "Unclassifiable",
+				"drugs": "923.43 (Drug Related Crimes)",
+				"financial": "424.94 (Fraud)"
+			}
+		},
+		{
+			"country": "KOSOVO",
+			"iso": "XK",
+			"population": "1815606",
+			"total": "1796",
+			"convicted": "1211",
+			"detained": "585",
+			"capacity": "2000 (according to prisonstudies.org)",
+			"female": "Waiting",
+			"type": {
+				"murder": "317 (Murder)",
+				"rape": "27 (Rape)",
+				"theft": "311 (Robbery & Theft)",
+				"traffic": "Unclassifiable",
+				"drugs": "157 (Drugs)",
+				"financial": "Unclassifiable"
+			}
+		},
+		{
+			"country": "MOLDOVA",
+			"iso": "MD",
+			"population": "3559500",
+			"total": "7844",
+			"convicted": "5406",
+			"detained": "2337",
+			"capacity": "7844 (according to prison studies.org)",
+			"female": "430",
+			"type": {
+				"murder": "1385  (Killing)",
+				"rape": "518  (Sexual Crime)",
+				"theft": "1688  (Theft, Robbery & Roguery)",
+				"traffic": "126  (Human Trafficking & Child Trafficking)",
+				"drugs": "302  (Narcotics Circulation)",
+				"financial": "18  (Economic Crimes)"
+			}
+		},
+		{
+			"country": "ROMANIA",
+			"iso": "RO",
+			"population": "20121641",
+			"total": "33419",
+			"capacity": "28934 (according to prisonstudies.org)",
+			"female": "1538",
+			"type": {
+				"murder": "6261  (Homicide)",
+				"rape": "1896  (Rape)",
+				"theft": "15872  (Theft & Robbery)",
+				"traffic": "1067  (Pimping & Human Trafficking)",
+				"drugs": "1481  (Illegal Trafficking and Consuming of Drugs)",
+				"financial": "1703  (Fraud + Embezzlement + Money Laundering + Electronic Fraud)"
+			}
+		},
+		{
+			"country": "SERBIA",
+			"iso": "RS",
+			"population": "7181505",
+			"total": "9758",
+			"convicted": "7826",
+			"detained": "1932",
+			"capacity": "7000 (according to prisonstudies.org)",
+			"female": "391",
+			"type": {
+				"murder": "538",
+				"rape": "179  (Rape)",
+				"theft": "2184",
+				"traffic": "84  (Ilegal Crossing of State Border and Human Trafficking + Human Trafficking)",
+				"drugs": "1405  (Unlawful Production, Keeping and Circulation of Narcotics)",
+				"financial": "235"
+			}
+		},
+		{
+			"country": "TURKEY",
+			"iso": "TR",
+			"population": "76667864",
+			"total": "145615",
+			"convicted": "118052",
+			"detained": "145615",
+			"capacity": "N/A",
+			"female": "5174",
+			"type": {
+				"murder": "25840 (Homicide)",
+				"rape": "11469 (Sexual Offenses)",
+				"theft": "42517 (Theft + Despoil/Extortion)",
+				"traffic": "1758 (Recruit/force/mediate prostitution)",
+				"drugs": "26908 (Drug)",
+				"financial": "3689 (Fraud)"
+			}
+		},
+		{
+			"country": "UKRAINE",
+			"iso": "UA",
+			"population": "45426200",
+			"total": "128512",
+			"convicted": "106029",
+			"detained": "22483",
+			"capacity": "Waiting",
+			"female": "8053",
+			"type": {
+				"murder": "8086  (Murder)",
+				"rape": "2362",
+				"theft": "25946  (Theft and Robbery)",
+				"traffic": "27 (Kidnapping)",
+				"drugs": "18891  (Crimes related with a turnover of drugs, psychotropic substances, their analogues and precursors)",
+				"financial": "Unclassifiable"
+			}
+		}
+	]
+}

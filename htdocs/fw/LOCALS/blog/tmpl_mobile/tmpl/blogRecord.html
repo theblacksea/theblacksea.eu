@@ -1,0 +1,125 @@
+<section class='share-links'>
+    <a href='https://www.facebook.com/sharer/sharer.php?u=" . urlencode(Toolbox::curURL()) . "'>
+        <img src='/assets/img/icons/icon-fb.svg' alt='Share on Facebook' />
+    </a>
+    <a href='mailto:?subject=&body=" . urlencode(Toolbox::curURL()) . "'>
+        <img src='/assets/img/icons/icon-email.svg' alt='Share via E-mail' />
+    </a>
+    <a href='https://twitter.com/intent/tweet?original_referer=".
+      urlencode(Toolbox::curURL())
+    ."&ref_src=twsrc%5Etfw&text=".
+      $co->title
+    ."&tw_p=tweetbutton&url=" . urlencode(Toolbox::curURL()) . "'>
+        <img src='/assets/img/icons/icon-twitter.svg' alt='Share via Twitter' />
+    </a>
+</section>
+
+<div class='{$o->ED}SING block SGrecord-blog SGrecord' id='SGrecord_{$co->idRecord}_{$o->lang}' >
+    ".(!$this->admin ? '' :
+         $this->Render_object($this->blog,'',
+            "{$o->modDirPub}tmpl_bsea/ADMIN/tmpl/blogRecord_extraSettings.html")
+    )."
+    <!-- start story -->
+	<div class='textColumnBig'>
+        <div class=' fullwidth'>
+               <span class='EDtxt noBorder {$co->catResFile} Name {$co->statusPublish} title'>
+                   {$co->title}
+               </span>
+        </div>
+        <div class='imageColumnHead orange space authName'>
+            <span class='publishDate'>
+            ".($co->publishDate
+                ? "<span class='ib'>{$co->publishDate}</span>"
+                : "<p class='notPublished'>not yet published</p>")."
+            </span>
+            <br>
+            <span class='authorNames'>
+                <a href='$co->authorHref'  class='ib'>{$co->fullName}</a>
+                ".(count($co->authors) == 0 ? '' :
+                  $this->Render_itemsFromStr($co->authors, '', "<a href='~ao->authorHref' class='ib'>{~ao->fullName}</a>
+                "))."
+            </span
+            ".(!$co->tagsName ? '' :
+               "
+                  <div class='fullwidth'>
+                      <span class='publishDate'>Filed under: </span>
+                      <span class='space {$co->catResFile}'>
+                          ".substr(
+                          $this->Render_arrayFromStr($co->tags, $o,
+                              "<a href='?idT={~o->idTree}&idC={~o->idNode}&filterName=tag&filterValue={~i}'>{~i}</a>, "
+                          ), 0, -2)."
+                      </span>
+                  </div>
+               "
+            )."
+        </div>
+
+	    <!-- <div class='theStory'>  -->
+        <div class='EDeditor space lead'>
+            {$co->lead}
+        </div>
+        <div class='clearfix'></div>
+
+	    <div class='EDeditor space  content'
+             data-iedit-cketoolbar ='".(!$this->user->rights['article_tmpl'] ?  'embedVideo' :  'admin' )."'
+        >
+            {$co->content}
+	    </div>
+
+
+	</div>
+    <!-- end story -->
+
+    <!-- begin left -->
+	<div class='LeftColumnSmall'>
+        <div class='space'>
+            <div class='imageColumnHead space'>Related Stories</div>
+            <ul>
+
+                ".(!$co->recordRelated
+                    ? "<li class = 'relatedContent ATmpl' >
+                          <span class='ATmpl it'>Editor's pic</span>
+                          <a href='#'
+                             class='EDtxtauto relatedStory'
+                             data-iedit-path = '".$o->modDir."ADMIN/getRecords.php'
+                             data-iedit-minln = '2'
+                             data-iedit-select = 'key'
+                          >
+
+                          </a>
+                       </li>"
+
+                    : "<li class = 'relatedContent ' >
+                          <span class='ATmpl it'>Editor's pic</span>
+                          <a href='".$co->recordRelated['record_href']."'
+                             class='EDtxtauto relatedStory'
+                             data-iedit-path = '".$o->modDirPub."ADMIN/getRecords.php'
+                             data-iedit-minln = '2'
+                             data-iedit-select = 'key'
+                          >
+                              ".$co->recordRelated['title']."
+                          </a>
+                       </li>"
+
+                )."
+
+                ".$this->Render_itemsFromStr($co->recordsRelated, '', "
+                    <li class = 'relatedContent' >
+                        <a href='{~ao->record_href}'>{~ao->title}</a>
+                    </li>
+                ")."
+
+            </ul>
+        </div>
+        <div>
+            <div id='disqus_thread'></div>
+            <noscript>
+                Please enable JavaScript to view the
+                <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+            </noscript>
+            <a href='http://disqus.com' class='dsq-brlink'>
+              comments powered by <span class='logo-disqus'>Disqus</span>
+          </a>
+        </div>
+    </div><!-- end left-->
+</div>

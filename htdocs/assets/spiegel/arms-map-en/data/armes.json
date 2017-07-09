@@ -1,0 +1,106 @@
+{
+   "storymap":{
+      "language":"en",
+      "call_to_action":true,
+      "slides":[
+         {
+            "media":{
+               "url":"",
+               "caption":"",
+               "credit":""
+            },
+            "location":{
+               "line":true,
+               "icon":"https://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png"
+            },
+            "background":{
+               "url":"img/kalach-bataclan.jpg"
+            },
+            "text":{
+               "headline":"The terror weapons",
+               "text":""
+            },
+            "date":"",
+            "type":"overview"
+         },
+         {
+            "date":"",
+            "media":{
+               "url":"img/dammartin.jpg",
+               "caption":"",
+               "credit":"EIC"
+            },
+            "location":{
+               "lat":49.0630368,
+               "line":true,
+               "lon":2.694055100000014,
+               "zoom":12,
+               "image":"img/dammartin.jpg"
+            },
+            "text":{
+               "headline":"At Dammartin",
+               "text":"<p>On January 9th 2015, Chérif and Saïd Kouachi, who two days earlier were the perpetrators of the attack on the offices of <em>Charlie Hebdo</em> magazine, were killed during an assault led by French police commandos in a printing works at Dammartin-en-Goële (in the département of the Seine-et-Marne), where the two brothers were entrenched.</p><p>Found onsite: two assault rifles and two Zastava semi-automatic pistols, manufactured by a Serbian weapons firm of the same name. According to the analysis of the French forensic police, the two assault rifles shot 61 cases which were also identified on the site of the <em>Charlie Hebdo</em> attacks. The two pistols carried armory stamps from the former Yugoslavia: these were regulation weapons - or parts of weapons – used by the local army or police in Yugoslavia.</p>"
+            }
+         },
+         {
+            "date":"",
+            "media":{
+               "url":"img/hypercacher.jpg",
+               "caption":"",
+               "credit":"EIC"
+            },
+            "location":{
+               "lat":48.8470271,
+               "line":true,
+               "lon":2.4156789999999546,
+               "zoom":12,
+               "image":"img/hypercacher.jpg"},
+            "text":{
+               "headline":"At the kosher supermarket",
+               "text":"<p>On January 9th 2015, Amedy Coulibaly entered a kosher supermarket at the Porte de Vincennes, on the south-east corner of Paris, when he killed three people and took 17 hostages – one of them, Yohav Hattab, was killed shortly afterwards. The hostage taking came to an end when the elite ‘Research, Assistance, Intervention, Deterrence’ unit of the French police, together with the elite ‘Research and Intervention Brigade’, launched an assault on the premises. Amedy Coulibaly was shot and killed in the action, when he opened fire on the police forces.</p><p>Found onsite: two Ceska Zbrojovka assault rifles and two Tokarev semi-automatic pistols. Made more than a half century ago, between 1951 and 1964, these weapons carry the hallmark of the Slovak manufacturer Kol Arms. The ballistic analysis showed that the two assault rifles shot 16 cases found at the Hypercacher. The investigating officers found that one of the Tokarev pistols was the arm used to shoot five cases found at the scene of the attempted murder of Romain Dersoir: on January 7th 2015, the young man was shot and seriously wounded while he was jogging at Fontenay-aux-Roses, a small town in the Hauts-de-Seine département south of Paris.</p>"
+            }
+         },
+         {
+            "date":"",
+            "media":{
+               "url":"img/bataclan.jpg",
+               "caption":"",
+               "credit":"EIC"
+            },
+            "location":{
+               "lat":48.86300989999999,
+               "line":true,
+               "lon":2.370615799999996,
+               "zoom":12,
+               "image":"img/bataclan.jpg"},
+            "text":{
+               "headline":"At the Bataclan",
+               "text":"<p>On November 13th 2015, following several terrorist attacks in the same Parisian area, Samy Amimour, Foued Mohamed-Aggad and Ismaël Mostefaï entered the Bataclan theatre and music hall during a performance by the US band Eagles of Death Metal, when they shot into the crowd. The final toll was 90 dead, and hundreds of other people wounded.</p><p>Found onsite: three Kalashnikov assault rifles, whose origins were, variously, from China, Bulgaria and Serbia.</p>"
+            }
+         },
+         {
+            "date":"",
+            "media":{
+               "url":"img/seat.jpg",
+               "caption":"",
+               "credit":"EIC"
+            },
+            "location":{
+               "lat":48.85428139999999,
+               "line":true,
+               "lon":2.4320433999999977,
+               "zoom":12,
+               "image":"img/seat.jpg"},
+            "text":{
+               "headline":"In the Seat vehicle at Montreuil",
+               "text":"<p>During the night of Saturday, November 14th 2015 to Sunday, November 15th 2015, a black Seat car abandoned by the terrorists was found in Montreuil (in the Seine-Saint-Denis département, north-west of Paris). In the vehicle were three assault rifles of Serbian origin, made in 1987.</p>"
+            }
+         }
+      ],
+      "map_type":"stamen:toner-lite",
+      "call_to_action_text":"Explore",
+      "map_as_image":true,
+      "map_subdomains":""
+   },
+   "font_css":"stock:pt"
+}

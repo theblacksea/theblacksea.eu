@@ -1,0 +1,40 @@
+<!--<div class='hidden well' id='form-addRecord' >-->
+<div class='well' id='form-addItem' style='display: none !important; '>
+    <form method='post' action='' style='margin: 0px;'>
+        <div class='ib' >
+            <p>Page Name</p>
+            <input type='text' name='name_en' value=''  class='ivy-light addArticle' placeholder='page Name' />
+        </div>
+        <div class='ib' >
+            <p>Page Manager</p>
+            <select name='type'>
+                  <option value='freePage'>freePage</option>
+                ".$this->Render_arrayFromStr($o->managers, '',
+                " <option value='{~i}'>{~i}</option>"
+                )."
+
+            </select>
+        </div>
+        <div class='ib' >
+            <p>Page Parent</p>
+            <select name='idParent'>
+                <option value='0'>No parents</option>
+                ".$this->Render_itemsFromStr($o->items, '',
+                " <option value='{~ao->id}'>{~ao->name_en}</option>"
+                )."
+
+            </select>
+        </div>
+        <div class='ib' >
+            <p>.</p>
+            <span class='margin-10'>Menu route</span>
+            <input type='checkbox' name='idM' value='mroute' />
+        </div>
+
+        <div class='ib ivy-pull-right' style='vertical-align: bottom; margin-top: 20px; margin-left: 10px;'>
+            <input type='submit' name='addRecord' value='add Item' class='btn  btn-round' >
+            <input type='hidden' name='methName' value='addItem'>
+            <input type='hidden' name='modName' value='genAdmin'>
+        </div>
+    </form>
+</div>

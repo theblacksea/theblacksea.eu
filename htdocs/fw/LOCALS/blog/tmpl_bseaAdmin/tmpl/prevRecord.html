@@ -1,0 +1,71 @@
+".( true ? "" : '
+available vars:
+  $ao
+     ->idRecord
+     ->record_mainPic
+     ->format
+     ->record_href
+     ->title
+     ->leadSec
+     ->city
+     ->country
+     ->statusPublish
+
+idRecord,
+idCat,
+idTree,
+uidRec,
+title,
+content,
+lead,
+leadSec,
+country, city,
+entryDate,
+publishDate,
+republish,
+format,
+relatedStory,
+folderName,
+idFolder,
+uid_Rec,
+fullName,
+tagsName,
+uidsCSV,
+fullNamesCSV,
+unamesCSV
+
+')."
+<!--<thead>
+ <tr>
+    <th>Title</th>
+    <th>Date registered</th>
+    <th>Author</th>
+    <th>Lead</th>
+    <th>Status</th>
+    <th>Actions</th>
+ </tr>
+</thead>-->
+
+<tr>
+   <td>{$ao->title}</td>
+   <td class='center'>{$ao->entryDate}</td>
+   <td class='center'>{$ao->fullName}</td>
+ <!--  <td class='center'>{$ao->leadSec}</td>-->
+   <td class='center'>
+       ".( $ao->publishDate
+           ? "<span class='label label-success'> published </span>"
+           : "<span class='label label-warning'> pending </span>"
+
+       )."
+
+   </td>
+   <td class='center'>
+
+       <a class='btn btn-info btn-mini' href='{$ao->record_href}'>
+           <i class='icon-edit icon-white'></i>
+       </a>
+       <a class='btn btn-danger btn-mini' href='#'>
+           <i class='icon-trash icon-white'></i>
+       </a>
+   </td>
+</tr>

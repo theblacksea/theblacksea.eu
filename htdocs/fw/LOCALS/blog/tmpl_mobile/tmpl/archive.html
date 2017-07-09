@@ -1,0 +1,33 @@
+<div class='block overflow'>
+
+	 <div class='textColumnBig ' >
+        <div class='EDtxa textDesc desc space'>
+            ".$this->Render_ModulefromRes($this->blogSite, 'archiveDescription')."
+        </div>
+     </div> <!-- end description -->
+    <div class='LeftColumnSmall blogsHead space'>Story archive</div>
+
+</div>
+
+<div class='allENTS block space overflow allrecords'  id='allrecords_{$o->lang}'>
+    <div class='ENT  archivePrevRec record'  id='record_0_en' style='display: none;' >
+    </div>
+    ".(!$this->admin ? "" :
+         $this->Render_object($o,'',
+            $o->modDirPub."tmpl_bsea/ADMIN/tmpl/blogRecord_addForm.html")
+
+        .(count($co->recordsUnpublished) == 0 ? "" :
+            $this->Render_object($o,'',
+            $o->modDirPub."tmpl_bsea/ADMIN/tmpl/archiveRecords_unpublished.html")
+        )
+    )."
+
+
+
+   ".(count($co->records) == 0 ? "<b>Coming soon</b>" :
+         $this->Render_itemsFromPath($co->records, $o,
+         $o->modDirPub."tmpl_bsea/tmpl/archivePrevRecord.html")
+   )."
+
+</div>
+    <!-- end archivemain -->

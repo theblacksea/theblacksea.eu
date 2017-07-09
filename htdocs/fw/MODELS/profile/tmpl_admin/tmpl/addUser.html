@@ -1,0 +1,180 @@
+<div class='row-fluid sortable'>
+    <div class='box span12'>
+        <!--Header-->
+        <div class='box-header well' data-original-title>
+            <h2><i class='icon-edit'></i> New User</h2>
+            <div class='box-icon'>
+                <!--<a href='#' class='btn btn-setting btn-round'><i class='icon-cog'></i></a>-->
+                <input type='submit' class='btn btn-round' value='Save changes' name='save' form='profile-form' />
+                <a href='?idT={$this->idTree}&idC={$this->idNode}' class='btn  btn-round'>
+                    <i class='icon-remove'></i>
+                </a>
+            </div>
+        </div>
+        <!--end Header-->
+
+        <!--Content-->
+        <div class='box-content' style='clear: both;'>
+            <form class='form-horizontal' action='' method='post' id='profile-form'>
+                <!--
+                o->profile->uid
+                o->profile->bio
+                o->profile->photo / 'RES/uploads/foto/default.jpg'
+                o->profile->first_name
+                o->profile->last_name
+                o->profile->title
+                o->profile->site
+                o->profile->phone
+                o->profile->email
+                -->
+                <input type='hidden' name='methName' value='addUser'>
+                <input type='hidden' name='modName' value='profile'>
+
+                <fieldset>
+                   <!-- <legend>
+                        &lt;!&ndash;user name&ndash;&gt;
+                        {$o->profile->first_name} {$o->profile->last_name}
+                    </legend>-->
+
+                    <div class='box'>
+                        <div class='box-content'>
+                            <div class='row-fluid'>
+                                <div class='span5'>
+                                    <!--1- o->profile->first_name-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='fName'>First Name</label>
+                                        <div class='controls'>
+                                          <input class='input-xlarge focused' id='fName'
+                                                 type='text' name= 'first_name' value='{$o->post->first_name}'>
+                                        </div>
+                                    </div>
+
+                                    <!--2- o->profile->last_name-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='lName'>Last Name</label>
+                                        <div class='controls'>
+                                          <input class='input-xlarge focused' id='lName'
+                                                 type='text' name= 'last_name' value='{$o->post->last_name}'>
+                                        </div>
+                                    </div>
+
+                                    <!--3- o->profile->title-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='uTitle'>Title</label>
+                                        <div class='controls'>
+                                          <input class='input-xlarge focused' id='uTitle'
+                                                 type='text' name= 'title' value='{$o->post->title}'>
+                                        </div>
+                                    </div>
+
+                                    <!--4- o->profile->site-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='uSite'>Site</label>
+                                        <div class='controls'>
+                                          <input class='input-xlarge focused' id='uSite'
+                                                 type='text' name= 'site' value='{$o->post->site}'>
+                                        </div>
+                                    </div>
+
+                                    <!--5- o->profile->phone-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='uPhone'>Phone</label>
+                                        <div class='controls'>
+                                          <input class='input-xlarge focused' id='uPhone'
+                                                 type='text' name= 'phone' value='{$o->post->phone}'>
+                                        </div>
+                                    </div>
+
+                                    <!--6- o->profile->email-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='uEmail'>Email</label>
+                                        <div class='controls'>
+                                          <input class='input-xlarge focused' id='uEmail'
+                                                 type='text' name= 'email' value='{$o->post->email}'>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='span5'>
+                                    <!--o->profile->photo / 'RES/uploads/foto/default.jpg'-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='uPhoto'>Photo</label>
+                                        <div class='controls'>
+
+                                            <span  class='about-photo-containter'>
+                                                <img style='width:100%'
+                                                     src='".($o->post->photo ? $o->post->photo : $o->profile->photoSrc )."'
+                                                     class='uclass' id='editImg'/>
+                                            </span>
+
+                                            <input type='hidden' name='photo'
+                                                   value='".($o->post->photo ? $o->post->photo : $o->profile->photoSrc )."'
+                                                    >
+                                            <input type='button' name='replaceImg' value='loadImg' id='uPhoto'
+                                                    onclick='ivyMods.profile.loadPic(\"editImg\")'>
+                                        </div>
+                                    </div>
+
+                                    <!--Addmin extras-->
+                                    <!--User class-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='selectClass'>User class</label>
+                                        <div class='controls'>
+                                            <select id='selectClass' name='cid'>
+                                                ".$this->Render_ItemsFromStr($o->classes,$o,"
+                                                       <option value='{~ao->cid}'
+                                                               `.(~ao->cid != ~o->post->cid ? '' : ` selected = 'selected' `).`
+                                                       >
+                                                           {~ao->uclass}
+                                                       </option>
+                                                 ")."
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--User Name-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='uName'>User Name</label>
+                                        <div class='controls'>
+                                          <input class='input-xlarge focused' id='uName'
+                                                 type='text' name= 'uname' value='{$o->post->uname}'>
+                                        </div>
+                                    </div>
+                                    <!--Pass-->
+                                    <div class='control-group'>
+                                        <label class='control-label' for='uPass'>Password</label>
+                                        <div class='controls'>
+                                          <input class='input-xlarge focused' id='uPass'
+                                                 type='password' name= 'password' value=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--7- o->profile->bio-->
+                    <div class='control-group'>
+                        <label class='control-label' for='uBio'>Biography</label>
+                        <div class='controls'>
+                            <textarea class='ckeditorr' id='uBio'
+                              rows='6' style='height: 500px;'
+                              name='bio'
+                            >
+                                {$o->post->bio}
+                            </textarea>
+                        </div>
+                    </div>
+
+
+                    <div class='form-actions'>
+                       <button type='submit' class='btn btn-primary'>Save changes</button>
+                       <button type='reset' class='btn'>Cancel</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--end Content-->
+    </div>
+</div>
+
+        

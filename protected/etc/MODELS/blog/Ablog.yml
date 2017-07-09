@@ -1,0 +1,106 @@
+#overrides
+adminOverride: true
+#==================================
+template: bseaAdmin
+template_file: records
+
+assetsInc: []
+assetsInc_home: []
+assetsExtern_home: []
+assetsInc_blogRecord: []
+assetsInc_blog: []
+assetsInc_archiveRecord: []
+
+#methodHandles:
+#  85: archive
+#  86: archive
+#  88: archive
+#  idRec: record
+
+
+handlers:
+  85:
+    handler:  archive
+    tmplFile:  records
+  86:
+    handler: backendBlog
+    tmplFile: records
+    idRec:
+      handler: record
+      tmplFile: blogRecord
+  88:
+    handler:  backendArchive
+    tmplFile:  records
+    idRec:
+      handler: record
+      tmplFile: blogRecord
+
+#===============================
+#posts
+#===============================
+posts_updateRecord:
+
+  #blogRecords
+  title:
+    fbk_notempty: {type: "error", name: "Must have a title", mess: "Please insert a title to your article"}
+  content:
+     fbk_notempty: {type: "warning", name: "Content", mess: "Your article should have a Content"}
+  lead:
+     fbk_notempty: {type: "warning", name: "Lead", mess: "Your article should have a lead"}
+  sideContent:
+    postName: "pulledQuotes"
+  leadSec: []
+  recordTags:
+    fbk: {type: "warning", name: "Tags", mess: "This tags are not allowed "}
+  city: []
+  country: []
+  idRecord:
+    postName: "BLOCK_id"
+  idCat: []
+  scripts: []
+  directLink: []
+  skipIndex: []
+
+  #blogRecords_stats
+  publishDate: []
+
+
+  # blogRecord_settings variables
+  relatedStory: []
+  idFolder: []
+  idFormat: []
+
+  #blogRecords_authors
+  authors: []
+  uidRec: []
+
+posts_publish:
+  idRec: ""
+
+posts_unpublish:
+  idRec: ""
+
+posts_addRecord:
+  title:
+     fbk_notempty: {type: "error", name: "Title", mess: "Your article must have a title"}
+  idFormat: ""
+
+blogPsts_deleteRecord:
+  idRec:
+    postName: "BLOCK_id"
+
+
+# pentru multipleusers
+assetsInc_blogRecord:
+  js:
+    -"/assets/tokeninput/src/jquery.tokeninput.js"
+
+assetsInc_archiveRecord:
+  js:
+    -"/assets/tokeninput/src/jquery.tokeninput.js"
+
+
+assetsInc_archiveRecordPhoto:
+  js:
+    -"/assets/tokeninput/src/jquery.tokeninput.js"
+

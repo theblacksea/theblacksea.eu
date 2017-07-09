@@ -1,0 +1,83 @@
+# O incercare de a opri cachingul paginii pentru fisierele
+#   care se pot schimba relativ des
+#
+# Intai descriem fisierele tinta:
+#<filesMatch "\.(html|htm|js|css)$">
+#    FileETag None
+#
+#    # exista modulul headers?
+#    <ifModule mod_headers.c>
+#        Header unset ETag
+#        # acum anuleaza cache pe cat posibil
+#        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+#        Header set Pragma "no-cache"
+#        Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+#    </ifModule>
+#</filesMatch>
+
+AddDefaultCharset UTF-8
+
+# NOTE: This is doomed to fail if mod_rewrite not installed and active
+# After rewrite module's installation, type as root:
+# a2enmod rewrite
+# service apache2 reload
+# English section over :-)
+
+# Activam citirea de URL-uri dubioase
+
+RewriteEngine On
+
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^(.*)$ https://theblacksea.eu/$1 [L,R=301]
+#RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+#RewriteBase /
+
+RewriteRule ^feed$         index.php?idT=103&idC=103 [L,NC]
+RewriteRule ^page/([^/])+$ http://theblacksea.eu/page/$1.html [L,NC,R=301]
+
+#==============================================================================
+
+# Rewrite for images, have them working under AdBlock conditions :-)
+
+RewriteRule .thumbs/images/(.+)300250(.+)$ /RES/uploads/.thumbs/images/$1300x250$2 [L,NC]
+RewriteRule .thumbs/images/(.+)-small.(jpeg|jpg|png|gif)$ /RES/uploads/.thumbs/images/$1_300x250.$2 [L,NC]
+
+# Redirect wrong URLs sent with the newsletter...
+Redirect 301 index.php?idT=88&idC=88&idRec=1160$  http://theblacksea.eu/index.php?idT=88&idC=88&idRec=1160&recType=multimedia
+Redirect 301 index.php?idT=88&idC=88&idRec=1142$  http://theblacksea.eu/index.php?idT=88&idC=88&idRec=1142&recType=story
+Redirect 301 index.php?idT=88&idC=88&idRec=1137$  http://theblacksea.eu/index.php?idT=88&idC=88&idRec=1137&recType=story
+Redirect 301 index.php?idT=88&idC=88&idRec=1145$  http://theblacksea.eu/index.php?idT=88&idC=88&idRec=1145&recType=story
+Redirect 301 index.php?idT=88&idC=88&idRec=1156$  http://theblacksea.eu/index.php?idT=88&idC=88&idRec=1156&recType=multimedia
+Redirect 301 index.php?idT=88&idC=88&idRec=1133$  http://theblacksea.eu/index.php?idT=88&idC=88&idRec=1133&recType=story
+Redirect 301 index.php?idT=88&idC=88&idRec=1153$  http://theblacksea.eu/index.php?idT=88&idC=88&idRec=1153&recType=story
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  index.php
+RewriteCond %{QUERY_STRING} ^idT=88&idC=88&idRec=1160$
+RewriteRule ^(.*)$ https://theblacksea.eu/index.php?idT=88&idC=88&idRec=1160&recType=multimedia [R=302,L]
+
+RewriteCond %{REQUEST_URI}  index.php
+RewriteCond %{QUERY_STRING} ^idT=88&idC=88&idRec=1142$
+RewriteRule ^(.*)$ https://theblacksea.eu/index.php?idT=88&idC=88&idRec=1142&recType=story [R=302,L]
+
+RewriteCond %{REQUEST_URI}  index.php
+RewriteCond %{QUERY_STRING} ^idT=88&idC=88&idRec=1137$
+RewriteRule ^(.*)$ https://theblacksea.eu/index.php?idT=88&idC=88&idRec=1137&recType=story [R=302,L]
+
+RewriteCond %{REQUEST_URI}  index.php
+RewriteCond %{QUERY_STRING} ^idT=88&idC=88&idRec=1145$
+RewriteRule ^(.*)$ https://theblacksea.eu/index.php?idT=88&idC=88&idRec=1145&recType=story [R=302,L]
+
+RewriteCond %{REQUEST_URI}  index.php
+RewriteCond %{QUERY_STRING} ^idT=88&idC=88&idRec=1133$
+RewriteRule ^(.*)$ https://theblacksea.eu/index.php?idT=88&idC=88&idRec=1133&recType=story [R=302,L]
+
+RewriteCond %{REQUEST_URI}  index.php
+RewriteCond %{QUERY_STRING} ^idT=88&idC=88&idRec=1153$
+RewriteRule ^(.*)$ https://theblacksea.eu/index.php?idT=88&idC=88&idRec=1153&recType=story [R=302,L]
+
+
+RewriteCond %{REQUEST_URI}  index.php
+RewriteCond %{QUERY_STRING} ^idT=88&idC=88&idRec=1156$
+RewriteRule ^(.*)$ https://theblacksea.eu/index.php?idT=88&idC=88&idRec=1156&recType=multimedia [R=302,L]

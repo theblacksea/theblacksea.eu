@@ -1,0 +1,100 @@
+".$this->setPreview()."
+<div class='row-fluid sortable'>
+    <div class='box span12'>
+        <div class='box-header well' data-original-title>
+            <h2><i class='icon-user'></i> Records</h2>
+            <div class='box-icon'>
+                <button  data-show='form-addRecord' class='toggleHidden btn  btn-round'>add</button>
+                <button  data-show='unpublishedRec' class='toggleHidden btn  btn-round'>unpublished</button>
+            </div>
+        </div>
+
+        <div class='box-content'>
+            ".$this->Render_object($o,'',
+              $o->modDirPub."tmpl_{$o->template}/tmpl/blogRecord_addForm.html")."
+
+            <!--table content - unpublished-->
+            ".(count($co->recordsUnpublished)==0 ? "" : "
+                <table id='unpublishedRec' style='display: none;'
+                       class='table table-striped table-bordered bootstrap-datatable datatable'>
+                    <thead>
+                        <tr>
+                            <th style='width: 600px;'>Title</th>
+                            <th >Date registered</th>
+                            <th >Author</th>
+                            <th >Status</th>
+                            <th >Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    ". $this->Render_itemsFromPath($co->recordsUnpublished, $o,
+                                  $o->modDirPub."tmpl_{$o->template}/tmpl/prevRecord.html")."
+                    </tbody>
+                </table>
+            ")."
+            <!--Filters-->
+            ".(count($this->tree[$this->idTree]->children) == 0 ? "" : "
+                <div>
+                    ".($this->idTree == $this->idNode ? "" : "
+                        <a  href='".PUBLIC_URL."?idT={$this->idTree}&idC={$this->idTree}' class = 'btn'>
+                            all
+                        </a>
+                    ")."
+                    ".$this->Render_arrayFromStr($this->tree[$this->idTree]->children , '',
+                         "
+                          <a  href='".PUBLIC_URL."?idT={~this->tree[~i]->idTree}&idC={~this->tree[~i]->id}'
+                               class='btn
+                               `.(~this->idNode == ~this->tree[~i]->id ? `btn-primary` : ``).`
+                               '
+                               id='{~this->tree[~i]->resFile}'
+                          >
+                             {~this->tree[~i]->name}
+                          </a>
+                         "
+                      )."
+                </div>
+                <br>
+            ")."
+
+            <!--table content - published-->
+            ".(count($co->records) == 0
+                ? "<b>No records To show</b>"
+                : " <table id='publishedRed' class='table table-striped table-bordered bootstrap-datatable datatable'>
+                      <thead>
+                          <tr>
+                              <th style='width: 550px;'>Title</th>
+                              <th >Date registered</th>
+                              <th >Author</th>
+                              <th >Status</th>
+                              <th >Actions</th>
+                          </tr>
+                      </thead>
+                      <tbody>"
+
+                  .( count($co->records) == 0 ? "" :
+                      $this->Render_itemsFromPath($co->records, $o,
+                                               $o->modDirPub."tmpl_{$o->template}/tmpl/prevRecord.html")
+                  )
+                  ." </tbody>
+                  </table>
+                  ".(!isset($co->pagesHref) || count($co->pagesHref) <= 1 ? '' :
+                     "
+                         <div class='pagination pagination-centered'>
+                             <ul>
+                               <li><a href='#'>Prev</a></li>
+                                ".$this->Render_arrayFromStr($co->pagesHref,'',
+                                    "<li>
+                                        <a href='{~i}'>`.(~key+1).`</a>
+                                     </li>
+                                    "
+                                 )."
+                               <li><a href='#'>Next</a></li>
+                             </ul>
+                         </div>
+                     "
+                  )
+           )."
+        </div>
+    </div><!--/span-->
+</div><!--/row-->
+

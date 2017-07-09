@@ -1,0 +1,123 @@
+<section class='share-links'>
+    <a href='https://www.facebook.com/sharer/sharer.php?u=" . urlencode(Toolbox::curURL()) . "'>
+        <img src='/assets/img/icons/icon-fb.svg' alt='Share on Facebook' />
+    </a>
+    <a href='mailto:?subject=&body=" . urlencode(Toolbox::curURL()) . "'>
+        <img src='/assets/img/icons/icon-email.svg' alt='Share via E-mail' />
+    </a>
+    <a href='https://twitter.com/intent/tweet?original_referer=".
+      urlencode(Toolbox::curURL())
+    ."&ref_src=twsrc%5Etfw&text=".
+      $co->title
+    ."&tw_p=tweetbutton&url=" . urlencode(Toolbox::curURL()) . "'>
+        <img src='/assets/img/icons/icon-twitter.svg' alt='Share via Twitter' />
+    </a>
+</section>
+
+<div class='{$co->ED}SING block space SGrecord-archive SGrecord' id='SGrecord_{$co->idRecord}_{$o->lang}' >
+
+    <div class='block-full'>
+        <!-- start story -->
+        <div class='textColumnBig '>
+            <div class='EDtxt Name blue title'>
+                {$co->title}
+            </div>
+            <div class='imageColumnHead orange space authName'>
+                <span class='publishDate'>
+                ".($co->publishDate
+                    ? "<span class='ib'>{$co->publishDate}</span>"
+                    : "<p class='notPublished'>not yet published</p>")."
+                </span>
+                <br>
+                <span class='authorNames'>
+                    <a href='$co->authorHref'  class='ib'>{$co->fullName}</a>
+                    ".(count($co->authors) == 0 ? '' :
+                     $this->Render_itemsFromStr($co->authors, '', "<a href='~ao->authorHref' class='ib'>{~ao->fullName}</a>
+                   "))."
+                </span>
+
+            </div>
+
+
+            <!-- <div class='theStory'>  -->
+            <div class='ATmpl'> Lead </div>
+            <div class='EDeditor lead'>
+               {$co->lead}
+            </div>
+
+
+            <!-- <div class='fullwidth'>
+                <div id='sharepanel' style='margin-bottom: 5px;'> -->
+
+                    <!-- AddThis Button BEGIN -->
+					<!-- <div class='addthis_toolbox addthis_default_style addthis_32x32_style' style='display: inline-block; float: left;'>
+						<a class='addthis_button_facebook'></a>
+						<a class='addthis_button_twitter'></a>
+						<a class='addthis_button_vk'></a>
+						<a class='addthis_button_reddit'></a>
+                        <a class='at300bs at15nc at15t_diaspora'
+                                href='http://sharetodiaspora.github.io/?title="
+                                .$co->title
+                                ."&url="
+                                .urlencode(Toolbox::curURL())
+                                ."'
+                                target='_blank'>
+                        </a>
+					</div> -->
+                    <!-- AddThis Button END -->
+
+                    <!-- <div class='bsea-fblike'>
+                        <div id='fb-root'></div>
+                        <div class = 'fb-like'
+                                data-href = '" . Toolbox::curURL() . "'
+                             data-width = '20' data-layout = 'button_count'
+                             data-action = 'like' data-show-faces = 'false'
+                             data-share = 'false'>
+                        </div>
+                    </div> -->
+
+                <!-- </div>
+            </div> -->
+
+        </div>
+    <!-- end story -->
+
+    </div>
+    <div class='space overflow'>
+
+    </div>
+
+
+    <div class='block-full'>
+        <div class='divider'></div>
+        <div class='clearfix'></div>
+
+        <div class='EDeditor pull-right content'
+             data-iedit-cketoolbar ='".(!$this->user->rights['article_tmpl'] ?  'embedVideo' :  'admin' )."'
+        >
+            {$co->content}
+        </div>
+
+        <div class='clearfix'></div>
+        <div class='fullwidth' style='margin: 20px 0px;'>
+            <div class='imageColumnHead b'>Related Stories</div>
+            <ul>
+                ".$this->Render_itemsFromStr($co->recordsRelated, '', "
+                    <li class = 'relatedContent' >
+                        <a href='{~ao->record_href}'>{~ao->title}</a>
+                    </li>
+                ")."
+
+            </ul>
+        </div>
+        <div class='clearfix'></div>
+
+        <div id='disqus_thread'></div>
+        <noscript>Please enable JavaScript to view the <a
+                href='http://disqus.com/?ref_noscript'>comments powered by
+                Disqus.</a></noscript>
+        <a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+        <br/>
+    </div><!-- end block -->
+</div>

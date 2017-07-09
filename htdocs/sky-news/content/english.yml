@@ -1,0 +1,474 @@
+- 
+  type: text
+  data:
+    - Sunday 7 August 2016. British satellite TV network Sky. 
+    - Veteran multi-award winning correspondent Stuart Ramsay is in a car on a dirt-track following a mysterious pick-up truck through a forest in Romania.
+    - His voiceover is curt and tough.
+    - “A Romanian mafia gang has told Sky News they are prepared to sell automatic weapons to anyone, including terrorists.”
+    - Two masked men exit the pick-up. To camera, they throw back a dirty blanket to reveal a pile of weapons, including rifles and a pistol. 
+    - Ramsay states these weapons are smuggled from Ukraine and could be used in terrorist attacks similar to the November 2015 Bataclan shootings in Paris.
+    - "Playing to an audience at home in Bedford or Epsom in the UK, the message is clear: the lawlessness of east Europe allows the sale of machine guns to terrorists who could target the United Kingdom. "
+    - And this route travels through a wooded glade in Romania.
+    - 8 August. Romanians share the broadcast on social media. 
+    - "The reaction: laughter."
+-
+  type: image-half
+  data:
+    src: "1. Presenter.jpg"
+    text:
+      h1: Anatomy of false and dubious content
+      h2: |
+        <a href="https://www.youtube.com/watch?v=4F8CwVq3hdU" target="_blank">
+          <img src="img/icons/icon-youtube.svg" alt="Youtube"> Sky News Story: ‘Romanian Gun Smugglers’
+        </a>
+      h3: <img src="img/icons/calendar-icon.svg" alt="Date" /> 7 August 2016
+      minus:
+        -
+          - Anchor Claudia-Liza Armah
+          - “A Romanian mafia gang has told Sky News they are prepared to sell automatic weapons to anyone including terrorists”
+      plus:
+        - Truth
+        - Despite the claims by the ‘smugglers’ in the film, no automatic weapons were shown on sale by the ‘mafia gang’
+-
+  type: text
+  data:
+    - Firstly, the set-up is ridiculous. Why would terrorist arms smugglers try to sell weapons on camera to a Sky News journalist? 
+    - "Secondly: the cache are sporting weapons used to take pot-shots at wild boar, deer, wolves or pheasants. One is an air pistol."
+    - It soon emerges that one ‘smuggler’ is a landlord in the sleepy northern town of Iernut, and the other is his cousin, who works as an account manager for UK phone company, Vodafone.
+    - 9 August. This mirth changes to anger. The Romanians authorities are incensed that a British broadcaster has slighted their record on arms control.
+    - Then-Prime Minister Dacian Ciolos attacks Sky News, saying it is "unacceptable to denigrate a country without proof". 
+    - Chief prosecutor of the body investigating organised crime and terrorism, DIICOT, Daniel Horodniceanu, believes the Sky News report was “scripted” and “staged” by British journalists. 
+    - Three Romanians in the film are arrested for endangering national security and locked up in police cells. They claim their roles were choreographed by representatives of the British broadcaster for a documentary. 
+    - But Sky News issues a statement, saying it ‘fully stands by the story’.
+    - Two months later, the men are not charged with gun smuggling. They are now on probation pending other charges.
+    - In the UK, the men are a terrorist threat. In Romania, they acted in a documentary for a few hundred Euro.
+    - "The question is: were the British fooled by a fixer and the Romanians, or were the Romanians paid to act in a news story staged by the British TV station or its representatives?"
+    - We analyse the Sky News report on the ‘masked men’ of Romania, and investigate other controversial reports by the broadcaster in Russia and Turkey. 
+    - This evidence puts into question the truth and ethics of the satellite TV station’s major exclusives.
+-
+  type: image-half
+  data:
+    src: "3. Map.jpg"
+    text:
+      minus:
+        -
+          - Anchor Claudia-Liza Armah
+          - “[Our correspondent Stuart Ramsay] sent this report from the west of the country near the border with Ukraine” 
+      plus:
+        - Truth 
+        - The west of Romania does not border Ukraine, but Serbia and Hungary. The report took place near the town of Jeica, in the north-centre, 100 km from the Ukrainian border 
+-
+  type: subheadline
+  data: "The pitch: A Moldovan Gang selling arms to Europe"
+-
+  type: text
+  data:
+    - 2016. Sky News was investigating illegal gun sales in east Europe. The news organisation was contacted by a fixer who had a Romanian source who could help. The local knew a gang in Moldova operating in Romania who sold guns to European crime syndicates.
+    - Aurelian Szanto is a Romanian from Iernut in Transylvania who resettled in the UK. His main job was in food delivery. On the side, he earned some cash from renting a British home to Romanians, and did some fixing work for the UK media on Romanian stories.
+-
+  type: image-embed
+  data:
+    src: "Szanto and the Royals.jpg"
+    caption: "‘Smuggler’ contact and the Royals: The Sky News ‘fixer’ for trafficking weapons of terror between Ukraine and Romania was a food delivery man based in Birmingham, Aurelian Szanto (centre, between the Queen and the Duchess of Cambridge) Source: Facebook"
+-
+  type: text
+  data:
+    - <a href="http://www.agerpres.ro/english/2016/08/10/sky-news-journalists-intermediary-these-people-tricked-me-they-said-it-was-a-documentary-17-57-13" target="_blank">Szanto said</a> a ‘fixer’ for Sky News asked him “to shoot a documentary” in Romania on  arms trafficking in east Europe. The contact told him the fictional film would inform people to be vigilant.  
+    - “[They wanted] two people presenting us some arms… to draw the attention to how these sales are done," Szanto said. 
+    - Unable to contact real arms smugglers, Szanto had a childhood friend called Csaba Pantics, from his tome town of Iernut. Csaba was a hunting fanatic. 
+-
+  type: text
+  data:
+    - Szanto asked Csaba and his cousin, Levente, to provide weapons for the documentary. Their reward would be around 1,000 Euro in total. Szanto could not produce military weapons, only sporting guns. Sky agreed to continue with the film anyway, states DIICOT. In a statement to UK media watchdog Ofcom, Sky News claimed these events were “simply not true”. 
+    - “[a]t all times Sky News believed that the collection included ‘military grade weapons’,” said the broadcaster. 
+    - On 29 July 2016, a four-strong Sky news team arrived in Targu-Mures, central Romania. Among them were a cameraman, a co-producer, a security expert and the reporter, Stuart Ramsay. 
+-
+  type: image-embed
+  data:
+    src: "Aurelian meets Team CCTV.jpg"
+    caption: "Romanian fixer Szanto meets Sky News crew before filming. Two weeks later, when Szanto is arrested, the news broadcaster gives him no legal support. Source: DIICOT"
+-
+  type: text
+  data:
+    - The team met Szanto and talked over the details of the report, telling him that he should ask the people, who were described as ‘gunrunners’, to wear hoods, according to Romanian officials.
+    - They also instructed Szanto to coach the so-called smugglers on the questions and provided the answers to give on camera, including the prices for some weapons, according to the Romanian investigation. Sky News refutes this claim.
+-
+  type: image-full
+  data:
+    src: "4. Jeep.jpg"
+    text:
+      minus:
+        -
+          - Chief correspondent Stuart Ramsay
+          - “After months of negotiation Sky News was told to meet this car in western Romania. The passengers wouldn’t communicate or reveal themselves”
+      plus:
+        - Truth
+        - In the official Romanian report, Sky News representatives asked local fixer Aurelian Szanto to “do the filming in one isolated wooded area surrounded by hills, the car, used by the smugglers, [should] not carry registration plates and the weapons [must] be covered with a blanket”
+        - "Sky News hit back: “we had no influence over the location of the meeting nor did they [Sky News] make specifications as to the kind of vehicle the men should use with number plates or otherwise”"
+        - The ‘smugglers’ were two childhood friends of the fixer
+-
+  type: text
+  data:
+    - The two ‘smugglers’ borrowed a pick-up truck from a friend, and collected six weapons - five hunting rifles and a BB gun - an air pistol. The reporter wanted the men to show off AK-47s. 
+    - Csaba asked a friend to lend him a WUM Sadu, a semi-automatic rifle that has some resemblances to an AK-47.
+    - On 31 July 2016, the reporters and Szanto travelled by car from Targu-Mures to the town of Jeica, Mures County, where they met with Csaba and Levente Pantics. Before they reached the clearing, the two men put on their hoods. 
+    - One of the British asked Szanto to also wear a hood, and play the role of “the dealer of the gunrunners”. He didn’t have one, so the film crew handed him a hood, cap and jacket. The filming took around 20 minutes. 
+    - The report, backed up by the actors in the programme, claimed that the WUM Sadu was an AK-47.
+    - “The AK is a bullshit AK,” says munitions expert Nicolae Marinescu. “It’s a hunting weapon. To give the prey a chance [to escape]. The military would not use this.” The WUM Sadu has a magazine of five rounds as opposed to 30 in an AK-47.
+    - In February, the UK broadcaster did acknowledge that among the weapons displayed at the back of the vehicle, “there were some high-end hunting weapons”. It said its ‘highly experienced’ reporter Stuart Ramsay “believed that the weapons, in particular the AK-47, were military grade, similar to those used in the Paris attacks”.
+    - Ramsay is Sky News Chief Correspondent and has worked on Mexican vigilantes, the Ukraine uprising, the Syrian war and Tahrir Square demos in Egypt. He also covered wars in Chechnya, Africa, the Middle East, Afghanistan and Iraq. But it seems he cannot recognise an AK-47.
+-
+  type: image-full
+  data:
+    src: "5. Image guns.jpg"
+    position: left
+    text:
+      minus:
+        -
+          - Stuart Ramsay
+          - “These are high quality weapons smuggled from Ukraine into Romania and then abroad”
+          - Sky News statement
+          - "In February 2017, the news group stated: “We believed the haul also included military style weapons as samples of the kind of guns [the gang] said they were able to supply...” It acknowledged “some high-end hunting weapons” were for ‘sale’"
+      plus:
+        - Truth
+        - All six weapons were bought by citizens in Romania over the last 25 years. None are military grade. They are for hunting. “None of these weapons are military fire-arms,” says munitions expert Nicolae Marinescu. “These are not arms for terrorists” The one referred to as an ‘AK-47’ is branded ‘MADE IN ROMANIA’ in big letters. In English. 
+-
+  type: text
+  data:
+    - Sky News’ head of security looked at the weapons in the van before filming. He believed them to be authentic. It appears he also cannot recognise an AK-47.
+    - In its response to a complaint from Ofcom, Sky News implied they now realise these arms are not military-grade. “[W]hether or not the weapons were primarily used for hunting they were still lethal, capable of causing mass casualties and being offered for sale illegally”. 
+    - When we approached Sky News to confirm that they now agree the weapons were not automatic, they refused to answer.
+    - The premise of the report is that automatic weapons are proven to be for sale, and could be bought by terrorists. This is false.
+    - Another central argument of the news item was that the men bought the weapons from Ukraine to sell to western Europe. Here the reporting was problematic. 
+    - When Ofcom viewed rushes of the film it determined that they “further supported the claim made in the report that the men got the weapons from Ukraine and claimed to be selling them abroad, for example in France, England and Spain”.
+-
+  type: text
+  data:
+    - "But there is contrary evidence in plain sight. The so-called AK-47, a WUM Sadu, can be seen in the film to carry the words, in English: ‘Made in Romania’."
+    - Sky News refused to say whether they agree it was unlikely that a weapon branded ‘Made in Romania’ was smuggled into Romania from Ukraine.
+    - Ofcom’s investigation into Sky News rests only the broadcaster’s ‘due diligence’ which took place before the release of the news report, but fails to determine if the journalists still believe their material is true.
+    - "Sky News claimed in a statement to Ofcom: “We believed in good faith that they were members of a criminal gang linked to organised crime who were prepared to sell weapons to anyone with the money to pay for them… [n]othing in our initial negotiations or during our meeting led us to suspect that [the ‘smugglers’] were anything other than they claimed.”"
+    - With the use of the past tense ‘believed’, this implies that, today, Sky News ‘believes’ the smugglers are not real. When approached, the broadcaster refused to confirm or deny their current view on whether the interviewees in their film were faking it. 
+    - Sky News only issued a statement backing its initial claim that the broadcaster “fully stands by the story.” 
+-
+  type: image-full
+  data:
+    src: "7. Hunting Rifle.jpg"
+    position: left
+    text:
+      minus:
+        -
+          - Stuart Ramsay
+          - “This is a sniper - explain us this because it’s a specialist weapon”
+        -
+          - Aurelian Szanto
+          - “300 metres it can reach. A target like this, 300 metres. Advantage - you can shoot the target from far away”
+      plus:
+        - Truth
+        - “This rifle is clearly a hunting weapon,” says Nicolae Marinescu, munitions expert 
+-
+  type: subheadline
+  data: "Reaction: report endangers national security"
+-
+  type: text
+  data:
+    - On 8 August, the day after the report was broadcast, Stuart Ramsay was attacked by Romanians on Twitter, who flooded him with evidence that crushed the veracity of his broadcast.
+    - "He hit back with condescension:"
+-
+  type: image-embed
+  data:
+    src: "twitter/Journalism Hehe Ramsay Tweet.jpg"
+    class: twitter
+-
+  type: text
+  data:
+    - But the Romanian authorities took the allegations seriously. 
+    - On Wednesday 10 August, DIICOT carried out dawn raids on the houses of Levente and Csaba, and seized the weapons in the film. They had picked up Aurelian Szanto the day before. They arrested the men and took them to police cells in Bucharest.
+-
+  type: image-embed
+  data:
+    src: "CSABA.jpg"
+    caption: Hunting rifle in ‘potential terror sale’ on Facebook homepage of outdoor fanatic Csaba Pantics
+-
+  type: text
+  data:
+    - Later, the men were accused of creating an organised crime group, giving false information to the public, and taking a weapon outside that was not permitted out of doors. 
+    - "The three men stayed in police cells for a month, before being transferred to a prison. DIICOT also sought to interrogate the British reporters. But Stuart Ramsay and his team had long left Romania for the UK. He wrote on twitter:"
+-
+  type: image-embed
+  data:
+    src: "twitter/Exposing a Fact Ramsay Tweet.jpg"
+    class: twitter
+-
+  type: text
+  data:
+    - Material in the video jeopardized national security, according to DIICOT, which stated the report generated “reproachful feelings towards Romania,” and “insecurity among Romanian nationals”.
+    - What angered authorities was the implication that Romania could not control weapons trafficking because their officials were corrupt or incompetent, and thus could be complicit in allowing Islamic terrorism to flourish. 
+-
+  type: image-full
+  data:
+    src: "8. Men Talking.jpg"
+    position: left
+    text:
+      minus:
+        -
+          - Stuart Ramsay
+          - “Is it possible that these weapons end up in the hands of terrorists as opposed to criminals?”
+        -
+          - Aurelian Szanto (translating)
+          - “If [you have] the money he doesn’t care who you are. He gonna sell to anyone”
+      plus:
+        - Truth
+        - Following the report, the two masked men and the fixer were arrested by Romanian anti-terrorist authorities, who seized the weapons in the film. The two men are not gun-smugglers. One is a landlord, the other worked as an account manager for UK telecom company Vodafone. They are free on parole, and are not charged with gun smuggling. They believed they were making a fictional documentary about arms trafficking
+-
+  type: text
+  data:
+    - Romania is surrounded by countries with huge military arsenals - Ukraine, Moldova and Serbia - three countries that have breakaway states, frozen conflicts or hot wars. 
+    - “These zones are at the border of Romania which, being secure, takes measures together with the [domestic secret service] the SRI and the police,” says Niculae Marinescu. 
+    - There are weapons divisions in every major town close to the border, who collaborate with the border police. “We keep under control what goes in and what goes out of the country,” says Marinescu, “much more than other countries in the EU.”
+    - Spreading false information, news or data that puts ‘national security’ in danger, can lead to a punishment of up to five years in jail.
+    - Human rights and freedom of expression advocates rushed to condemn the decision to detain the fixer, his contacts and the move to interrogate Ramsay. The NGOs were in a tight position, as they had to side with unethical journalists. 
+    - There was “no real danger” to national security from the report, argues Liana Ganea, program manager for media monitoring NGO Active Watch in Romania. 
+    - “It is only what it is - bad quality journalism,” she adds. “Not criminal attacks to Romania’s national security. The real effect was actually that those journalists involved in the story became victims of a forceful and disproportionate reaction of the state.”
+    - The conflating of poor media ethics with terrorism could pave the way for DIICOT to arrest any journalist, blogger or citizen who criticizes the actions of the government. 
+    - “Such reactions of the Romanian authorities have a chilling effect on journalism, as they are a strong form of harassment,” Ganea adds. “There is a risk of them happening again.”
+-
+  type: image-full
+  data:
+    src: "9. Terrorists in Paris.jpg"
+    position: right
+    text:
+      minus:
+        -
+          - Stuart Ramsay
+          - “The increase in murderous terror attacks in Europe has highlighted the damage that can be done by military grade weapons in the hands of individuals, as well as gangs...
+          - Automatic weapons kill more people [than bombs] and are easier to use”
+          - Sky News statement
+          - "In February 2017, Sky News implicitly admitted that these were not military grade weapons, stating: “[w]hether or not the weapons were primarily used for hunting they were still lethal, capable of causing mass casualties and being offered for sale illegally”"
+      plus:
+        - Truth
+        - Associating the Paris and Brussels terror attacks with the meeting in the Romanian woods is a false comparison, as no automatic weapons were shown for sale
+-
+  type: text
+  data:
+    - But it wasn’t only liberal charities attacking the the authorities’ reaction. Cristian Troncota, former spy trainer and professor at the University of Sibiu, calls DIICOT’s invocation of terror laws “an exaggeration” 
+    - “It’s an abuse on DIICOT’s part, because DIICOT isn’t occupied with [protecting a country’s] image, but with organised crime and terrorism,” he says.
+    - The state’s move was designed to defuse the violent emotions incited among Romanians over the false report. The prosecutors took the text of the criminal code literally, which states that damaging the image of the country can be considered a national security issue. 
+    - “The first measures that were taken were an exaggeration because they were produced by emotion,” says Marinescu. “That is us [Romanians]. That is what we are, extreme, in one sense - or another.”
+    - Romania also wanted to show that it was autonomous from international pressure, and would not kowtow to the British media agenda. 
+    - “Until now, we [Romania] wouldn’t have reacted to this,” says Troncota, “but now we have balls.”
+-
+  type: image-full
+  data:
+    src: "10. Export Justification.jpg"
+    text:
+      minus:
+        - 
+          - Director National Crime Agency in the UK, Ian Cruxton
+          - “The potential of what we have seen in Europe in terms of greater availability of and the use of those weapons, we’re very conscious of the fact that they are only 21 miles away across the channel and we are constantly working and are vigilant in terms of managing that threat as it poses itself to the UK”
+      plus:
+        - Truth
+        - The implication is that weapons from Romania could come to the UK. But Romania is not in the Schengen zone of free movement. To traffic weapons from Ukraine to Schengen through this route, a gun-runner needs to cross a hard border to Romania, and a second to Hungary. Military weapons from Ukraine would easier transit one hard border to Slovakia and Poland. There is an extra hard border to the UK, as the UK is also not in Schengen. Weapons in the 2015 Brussels and Paris terror attacks <a href="http://theblacksea.eu/index.php?idT=88&idC=88&idRec=1231&recType=story" target="_blank">came from Slovakia and the west Balkans</a>.
+-
+  type: subheadline
+  data: "Sky News: refusal to back up freelancers"
+-
+  type: text
+  data:
+    - The two Romanian ‘smugglers’ and the fixer, Aurelian Szanto, declared that they believed they were taking part in an educational documentary. 
+    - “I let myself fooled, I was tricked by these people,” Szanto said in a public statement. "Everybody makes mistakes in life, everybody does stupid things.”
+    - On 10 August, Stuart Ramsay took to Twitter.
+-
+  type: image-embed
+  data:
+    src: "twitter/Deal with it.jpg"
+    class: twitter
+-
+  type: text
+  data:
+    - "And on 11 August he writes:"
+-
+  type: image-embed
+  data:
+    src: "twitter/No payment in prison shock.jpg"
+    class: twitter
+-
+  type: text
+  data:
+    - "To those unfamiliar with English colloquialisms, this means: ‘The men have been arrested. They say they are innocent. What a shock!’"
+    - "The last phrase is sarcastic."
+    - "Whether the Sky News broadcast is true or false, it appears Ramsay is gloating in the fact that his fixer, Szanto, has been arrested. "
+    - "This means that when a Sky News freelancer faces a national security probe that could mean up to five years in prison, its lead journalist’s reaction is one of sarcasm."
+    - "When confronted, Sky News refused to say what measures they made to protect their fixer."
+    - "“An ethical and knowledgeable journalist would work hard to make sure that they didn’t put fixers in harm’s way,” says Colleen Murrell, author of ‘Foreign Correspondents and International Newsgathering: The Role of Fixers’. “The correspondents know that they can walk away after filming but a local person cannot. If the journalists had a part in doing something unethical then they and their companies should help the local people whom they had employed.”"
+-
+  type: image-full
+  data:
+    src: "11. The Last Shot.jpg"
+    position: left
+    text:
+      minus:
+        -
+          - Stuart Ramsay
+          - “[The gunrunners] told us the next time we arrived they expected us to be buyers”
+          - Sky News statement
+          - The Romanian gang agreed to be filmed “in the belief that we would actually buy some weapons from them” 
+      plus:
+        - Truth
+        - Why does Sky News argue that a mafia gang believed they could sell weapons to journalists? Why would a gang smuggling arms from Ukraine to Romania agree to be filmed by a Sky News team led by Stuart Ramsay who, on camera, reports from the scene of the sale?
+-
+  type: text
+  data:
+    - After two months in jail, the three men were released on parole on 10 October. Today they remain under investigation and cannot leave Romania. 
+    - Levente Pantics had worked four years at Vodafone and built up a trusted client base in his district of Bistrita. But when the controversy kicked off, the phone company would not give him a character reference, and dismissed his services. Csaba continues to work as a local landlord. Meanwhile Szanto has lost his job in the UK, and has taken to Facebook to sell off his iPad and television.
+    - On the Romanian side, the investigation is complete, but authorities cannot close the case until they obtain statements from Stuart Ramsay and the Sky News team - an action their UK counterparts have yet to undertake. 
+    - On 16 February this year - almost six months after the incident - DIICOT’s head Daniel Horodniceanu said he does not know whether this delay is a “tactic”.
+    - “We will see whether or not we receive a reply from the British”, <a href="http://adevarul.ro/news/eveniment/horodniceanu-despre-dosarul-sky-news-lucreaza-foarte-greu-partea-britanica-respectam-procedura-vom-vedea-putem-obtine-solicitat-1_58a5bbe95ab6550cb8875cb3/index.html" target="_blank">he said</a>.
+    - Those jointly responsible for producing the false report - the British - are unlikely to face the punishment already experienced by the Romanian fixers.
+    - Over 190 viewers complained to UK broadcasting watchdog Ofcom that the story was not duly accurate. But on 6 February 2017, the institution ruled that the report was “not in breach” of any regulations, based solely on evidence provided by Sky News. They didn’t bother to contact the Romanians who were jailed.
+    - "The allegations made by the Romanian fixers raises questions about two other Sky News reports - in Turkey and Russia - that appear to follow similar patterns: masked men on camera with ‘exclusive’ stories on war and terrorism, packed with sensational claims that cannot be independently verified. "
+-
+  type: subheadline
+  data: "Sky News: Russia's Secret Soldiers Fighting In Syria “a performance”"
+-
+  type: text
+  data:
+    - "In mid-2016, freshman Russian correspondent for Sky News, John Sparks, had an exclusive: The first soldiers ever to speak publicly about their role in a private Russian army fighting for President Assad’s forces in Syria. "
+    - In March 2016, these men were the vanguard in the battle for the ancient city of Palmyra in the centre of the Homs district. And the rookie had scooped the entire Russian and foreign media to the story. 
+    - On 10 August 2016, Sky News broadcast interviews with two men, their identities and voices concealed, detailing how they had fought for Wagner, “a shadowy force preparing to deploy to Syria” . 
+    - This Russian-backed mercenary force was run by an ex-special services soldier, Nikolai Utkin, who had deep connections to the Russian Ministry of Defence. 
+    - The existence of Wagner had been broken in detail by <a href="http://www.interpretermag.com/fontanka-investigates-russian-mercenaries-dying-for-putin-in-syria-and-ukraine/" target="_blank">Russian news website Fontanka</a>. But no one had filmed ex-soldiers talking live about their experiences.
+    - This was at a time when Russia claimed it was only deploying air raids in support of Assad. 
+    - The report quotes Dmitry, who states he was one of 900 deployed to Syria through Wagner. He said he had virtually no military experience, and previously worked as a secretary. In Syria, he was deployed at a forward command post and when the shooting started his company were ordered forward. 
+    - “It was like World War II,” he said. “I started complaining and I wasn’t the only one. Half the company went to the commanders asking to be sent home. Because every time we fought, less and less people returned.”
+    - But ‘Dmitry’ was an actor named Alexander Agapov, from the Oleg Budankova Theatre in Moscow, hired for the film, he says, through a Russian fixer, Anastasia Sobinyakova.
+-
+  type: image-full
+  data:
+    position: left
+    src: "12. Palmyra tank.jpg"
+    text:
+      h1: The Actor of Syria
+      h2: |
+        <a href="https://www.youtube.com/watch?v=HvW3OBJDVS8" target="_blank">
+          <img src="img/icons/icon-youtube.svg" alt="Youtube"> Sky News, Russia’s Secret Soldiers Fighting in Syria
+        </a>
+      h3: <img src="img/icons/calendar-icon.svg" alt="Date" /> 10 August 2016
+      p:
+        - "Report: Exclusive interviews by Russian correspondent John Sparks with Russian mercenaries for President Assad’s war against ISIS terrorists"
+        - "Claim: One interviewee, Alexander Agapov, is an actor paid to perform the role of an ex-mercenary. “To be honest, I told them so much bullshit and [the Russian crew] understood it and were smiling,” Agapov tells us. “I have never been to Syria.”"
+-
+  type: text
+  data:
+    - We spoke to Agapov and his story reveals in detail the process of how he came to play the role of a Russian fighter.
+    - Sobinyakova met a former soldier - also called Dmitry - at a Cossack festival in southern Russian city of Krasnodar, says Agapov. She told him she was looking for people to talk about their experiences and asked if he had friends in the military.
+    - “She told [Dmitry] that even if he couldn’t find a soldier, he could bring anyone and he’s gonna get paid,” adds the actor. 
+    - Dmitry called up his friend and showed him an article about Wagner on Fontanka. “I tried to learn it, like I do as an actor with any other scenario,” says Agapov.
+    - Dmitry and Alexander then met Sparks and the fixer in a hotel in Moscow. “[Sobinyakova] was just a translator, but she had character,” says Agapov. “I remember she forbid us to smoke in the room.” 
+    - Agapov believes the Russians were in on the performance. 
+    - "“They knew I was an artist and they probably expected good work from me. But we didn’t talk about me being an actor,” he says. “Dmitry told me they knew. But they only said: ‘Well, you know what to do, you understand this, Dmitry explained everything to you and you got it, right?’ I said yes.”"
+    - He was paid around 1,600 Euro (100,000 Roubles). There was no contract, says Agapov. Nor did he sign anything.
+    - Dmitry gave him a script. He says it was nothing new. Only details gleaned from the Internet and Fontanka. “They didn’t have any other information,” he adds.
+    - Agapov supplied us with a recording he made of the rehearsal with Sparks, which overlaps with the final version that was broadcast. Nothing in the tape indicates that Sparks was choreographing the performance.
+    - They set up another date for Agapov to be picked up by a driver. They went to the same hotel room to film a noirish piece with chiaroscuro light effects and military medals that can be picked up at any corner stall in Moscow. Sparks and Sobinyakova were present.
+    - “I told them so much bullshit and [the Russians] understood it and were smiling,” says the actor. “I was telling so many lies about guns and stuff.”
+    - Sparks asked Agapov for some pictures. Following school, the actor completed his military service in the Chechen Republic, and sent over a couple of photos that Sparks used in the story.
+    - They are on his VKontakte account, uploaded in 2013. In a voiceover, Sparks implies the pictures are taken from Syrian offensives that took place in 2015 and 2016. 
+-
+  type: images-comparison
+  data:
+    images:
+      - "13. Sky Agapov 1.jpg"
+      - "13. Sky Agapov 2.jpg"
+      - "13. Agapov Real 1.jpg"
+      - "13. Agapov Real 2.jpg"
+    text:
+      minus:
+        -
+          - Report
+          - "The voiceover for these two images by John Sparks: “Dmitry was deployed at a forward command post and when the shooting started his company were ordered forward. 'It was like World War II,' he said.”"
+      plus:
+        - Truth
+        - These two images (top) are blurred versions of pictures from Alexander Agapov’s social media account on VKontakte (bottom), free to be seen by all, uploaded in 2013 from his time as a conscript in Chechnya. The intensive fighting mentioned in Syria took place in 2015 and 2016
+-
+  type: text
+  data:
+    - We asked Agapov if he had ever been to Syria.
+    - “Of course not,” he said. “I am not even sure where Syria is.”
+    - Like the story in Romania, the Sky correspondent caveats the entire broadcast by stating these men “claim” they are from Wagner, rather than seeking to prove it. 
+    - "As in the Romanian broadcast, the structure also brings in a security analyst to add respectability. Sparks asks a military analyst and fluent English speaker, Pavel Felgenhauer: does Wagner exist?"
+    - "The analyst replies: “Obviously they do exist. These kind of ‘volunteers’ do appear in different war zones where the Russian government wanted them to appear. First in Crimea, then in Donbass, now in Syria, but they haven’t been legalised up until now.” "
+    - "When the news item broadcast, Agapov contacted a friend at Russian network NTV to confess that he had been an actor in the story. He did not want to get into trouble."
+    - "The issue remains the same as the Romanian story: were Sky News accomplices to a fake interview or were they fooled by crafty fixers? "
+    - "“I think they all just lied to John Sparks,” says Agapov."
+    - "In September, Sparks refused to answer as to whether he had met with Agapov. Instead he shifted the focus to his fixers, stating on Twitter:"
+-
+  type: image-embed
+  data:
+    src: "twitter/Our Team Sparks Tweet.jpg"
+    class: twitter
+-
+  type: text
+  data:
+    - Now Agapov is angry with himself for his involvement in such a ‘sting’
+    - “I don’t understand why [Sky News] did it,” he says. “To ruin the reputation of our country? They are spending so much money on bullshit like this. They could have given this money to a charity for sick children.” 
+    - Sparks and Sobinyakova would not reply to requests for comment.
+-
+  type: subheadline
+  data: "<a href=\"http://news.sky.com/story/is-hostages-subjected-to-execution-rehearsals-10368464\" target=\"_blank\">Sky News</a>: “I saw Jihadi John kill”"
+-
+  type: text
+  data:
+    - Mohammed Emwazi was an ISIS recruit in Syria who beheaded captives on live videos in 2014 and 2015. Hostages nicknamed him ‘John’ because he was part of a quartet of terrorists who spoke English. They were dubbed ‘The Beatles’ and the media called Emwazi ‘Jihadi John’ after Liverpool legend John Lennon. He moved to the UK from Kuwait when he was six and graduated in IT and business from the University of Westminster.
+    - Emwazi was seemingly instrumental in killings of western hostages such as aid workers and journalists, as well as 47 year-old Japanese video journalist Kenji Goto, who was beheaded on 31 January 2015.
+    - Only five weeks later, on 10 March 2015, Sky News broadcast an interview with an ISIS defector who worked with Enwazi. Stuart Ramsay was the correspondent.  
+    - “He is the only person who has seen Jihadi John kill and admit to seeing it,” announced Ramsay on film. “His victim - Japanese journalist Kenji Goto… This man was there. He saw what happened.”
+    - In a basement in Turkey on a pile of pillows set about by packets of Gauloise cigarettes, Ramsay talks with the gruff-voiced ‘defector’, who recounts life in ISIS in broken English. His speech needs subtitles and frequent confirmation on its meaning by Ramsay. The British journalist does not feed him exact quotes, but does lead the discussion. The ‘defector’ - known as Saleh - is wrapped in a red-patterned headscarf and speaks in his own voice about how ‘Jihadi John’ orchestrated killings.
+    - “Syrian man, anyone can kill him,” says Saleh, “but foreigners, only John.”
+    - ‘Saleh’ was a translator who was also employed by the Turks to convince the hostages they would be safe, the report claims. The terrorists would change the names of the hostages to Muslim monikers to “convince the hostages they were amongst friends” adds Ramsay. The Japanese journalist Kinji was dubbed ‘Abu Saad’. 
+    - "Ramsay concludes the report with the following: “Scared and emotional, Saleh ended the interview - he left knowing his life, like those of the hostages, is now in permanent danger from Islamic State.”"
+    - This is a curious ending as it seems to imply that ‘Saleh’ is now in ‘permanent danger’ due to the interview he just made with Sky News.
+    - Like the reports from Russia and Romania, the correspondent does not say the defector is stating the truth, but instead reports on his “claims” that militants “routinely subjected foreign hostages to mock executions”. 
+    - But this, like the other reports above, has no independent verification.
+    - On the comments section under the Sky News post on YouTube, the broadcast is mocked as fake, and the anonymous and masked structure of the set-up is so notoriously dubious, that it even has a reputation as “the famous Sky talking cloth”.
+    - Internet chatter is obviously not proof. 
+    - So we talked to a Turkish journalist who also interviewed the same ‘Saleh’ and does not believe he is real.
+-
+  type: image-full
+  data:
+    src: "14. ISIS Masked Man.jpg"
+    position: left
+    text:
+      h1: The Questionable Jihadist
+      h2: |
+        <a href="http://news.sky.com/story/is-hostages-subjected-to-execution-rehearsals-10368464" target="_blank">
+          <img src="img/icons/sky-news-logo.png" alt="SkyNews"> Sky News: “IS Hostages Subjected To Execution Rehearsals”
+        </a>
+      h3: <img src="img/icons/calendar-icon.svg" alt="Date" /> 10 March 2015
+      p:
+        - Chief correspondent Stuart Ramsay interviews a man who claims to have worked with ISIS terrorist and former London student, Mohammed Emwazi, known as ‘Jihadi John’. “[This man] is the only person who has seen Jihadi John kill and admit to seeing it. His victim - Japanese journalist Kenji Goto… This man was there. He saw what happened.”
+        - "Concern: We spoke to a Turkish journalist who also interviewed this so-called ISIS defector, who believes there is only a one in ten chance he is real. “He could be [a] family member of the person who was arranging the interview for big money,” he told us. “Anyone [who] watched TV could say those things and any Syrian could say that after getting that much money.”"
+-
+  type: text
+  data:
+    - "Men around the so-called ISIS ‘defector’ contacted journalist fixers in Turkey and told them ‘Saleh’ was willing to talk for money. When he interviewed the so-called terrorist, the Turkish journalist told us: “That guy did not show his face at all to anyone, he did not only hide his face, he even hid his fingers. He could be family member of the person who was arranging the interview for big money.”"
+    - It is understood that both Sky News and a Japanese film crew paid him for the interview [Sky would not comment on the payment].
+    - "“What that guy said was the info anyone knew and could say. He was saying: yes I saw ISIS killing people, I saw Jihadi John killing Japanese hostage,” the journalist adds. “Anyone [who] watched TV could say those things and any Syrian could say that after getting that much money. He did not give any info that no one knew about it.”"
+    - He told his employers that he thought the story was fake. In conclusion, the Turkish journalist thinks there is only a one in ten chance the man is speaking truthfully.
+    - Later that year, on 12 November, the US reported that one of their drones had killed Emwazi in Raqqa, Syria.
+    - Through an intermediary, the fixer for Sky News on this report refused to talk to us about the falsehood claims.
+    - Confronted on the issues of the veracity of this broadcast, Sky News stated to us that “we are happy” that this story complies “with our editorial guidelines”.
+-
+  type: subheadline
+  data: Depth of industry problem unknown
+-
+  type: text
+  data:
+    - No one knows how widespread is the fix-up industry of journalists paying ‘sources’ who make claims to order. Dodgy practices can be due to financial or political reasons. 
+    - “One fixer from Albania told me of other fixers who would get friends to spin a line for a correspondent, and then they would pay them from their salary,” says Colleen Murrell from Monash University, Melbourne, who has studied the industry. 
+    - “Another fixer from Iraq said they knew fixers who would often misdirect journalists by saying particular people weren’t available or roads were closed and so certain people couldn’t be reached. This latter reason was because fixers didn’t like the opinions of the potential interviewee.”
+    - Murrell once spoke to a foreign correspondent in Afghanistan who had doubts about some so-called members of the ‘Taliban’ who turned up on cue for his story, provided through his fixer.
+    - “He said that in the heat of the moment, and as they were pulling out of the place, he didn’t really have time to double check, but it had since bothered his conscience,” says Murrell. “When people act unethically like this, then they are bound to eventually ruin their reputations and then they will become unemployable. Nobody would want to get caught out peddling untruths.”
+    - This especially happens in poor and war-torn countries.
+    - “The implications aren’t good in terms of ethics,” says Murrell. “As a journalist it means that you can be inadvertently publishing or broadcasting totally fake information, without even knowing it. 
+    - “Obviously if the journalists know about it, then that is unconscionable.”

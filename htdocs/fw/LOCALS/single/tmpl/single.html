@@ -1,0 +1,11 @@
+<div class='block overflow'>
+    ".(file_exists(FW_PUB_PATH.$o->modDirPub."tmpl/".$o->nodeResFile.".html")
+    ? $this->Render_objectFromPath($o, $o->modDirPub."tmpl/".$o->nodeResFile.".html")
+    : $this->Render_objectFromPath($o, $o->modDirPub."tmpl/pageContent.html")
+
+    )."
+</div>
+
+<div class='clearfix'></div>
+
+

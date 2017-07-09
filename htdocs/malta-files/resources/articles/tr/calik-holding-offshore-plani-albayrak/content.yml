@@ -1,0 +1,95 @@
+-
+  type: header
+  data:
+    h1: Çalık Holding’in Offshore Planı ve Albayrak’ın Varlık Barışı
+    h2: "Enerji, tekstil ve inşaat devi Çalık Holding, milyonlarca liralık vergiden kaçmak için bir offshore şirketler ağı kurdu. Fakat sonrasında bu plana ihtiyaç kalmadı çünkü Çalık çok daha kolay bir yöntem buldu: Berat Albayrak’ı kanun çıkarmaya ikna etmek."
+    h3: Zeynep Sentek, Craig Shaw
+    h4: 19 Mayıs 2017
+    image: berat-albayrak-2.jpg
+-
+  type: text
+  data:
+    - Berat Albayrak’ın CEO olarak görev yaptığı sırada Çalık Holding, Türkiye’de vergi ödememek için Malta ve İsveç’te kurulu şirketleri içeren bir offshore sistemi kurdu. 
+    - Ama sonunda bu sistemi kullanmaktan vazgeçtiler. 
+    - Neden? Çünkü daha basit bir yöntem buldular. Albayrak, 2015 yılında Enerji ve Tabii Kaynaklar Bakanı seçildiğinde, Çalık Holding’deki eski iş arkadaşlarının yazdığı bir vergi affı kanununun meclise sunulmasına aracı oldu. Varlık Barışı olarak da adlandırılan kanun, Çalık gibi şirketlerin yurtdışında offshore hesaplarda tuttuğu milyonların vergi ödemeden ve hesabı sorulmadan Türkiye’ye girişine izin veriyordu.  
+    - European Investigative Collaborations (EIC) konsorsiyumu, Malta’nın ticaret sicil kayıtlarını ve Redhack’in geçtiğimiz sene Eylül’de yayınladığı e-postaları kullanarak Albayrak ve Çalık Holding’in offshore maceralarını gözler önüne seriyor. Aynı zamanda da Çalık gibi şirketlerin hükümet üzerindeki etkisini ortaya çıkarıyor. 
+-
+  type: subheadline
+  data: "Operasyon: Parayı Türkiye’ye getir"
+-
+  type: text
+  data:
+    - "4 Kasım 2011’de gönderilen e-posta uyarıyor: “Abi yeni bir sistem kurulacak ama bu sistem Maliye’yi kandırmaya yönelik, yani sakat bir sistem olacak. Yarın bir gün bu tespit edilirse Maliye’de itibar iyi olmayabilir.”"
+    - E-postayı gönderen, Çalık Holding’in Dubai ofisi çalışanı Metin Atalay.
+    - Alıcısı ise o sırada 33 yaşında olan, Erdoğan’ın damadı Berat Albayrak. Metin Atalay’ın gönderdiği e-postalardan anlaşıldığı üzere Atalay, Dubai ofisi için Albayrak tarafından işe alınıyor. Çalık’ın Dubai operasyonu, vergi yükümlülüğünün olmadığı serbest bölgelerden biri üzerinden yürütülüyor. 
+    - Atalay’ın aslında gerçek bir iş tanımı yok ve Çalık’la bağlantılı görünmemesi için kendisine kartvizit bile bastırılmıyor. Kendi yazdığına göre patronları Atalay’a “işinin hiçbir önemi yok” ve “[seni] sadece ve sadece bu ince işler için işe aldık” diyor. Yani önüne koyulan belgelere tek bir soru sormadan imza atması için. Çünkü Çalık’ın Dubai şirketinin diğer ülkelerden gelen kârı toplamak dışında gözle görülür bir aktivitesi yok. Kayda değer bir faaliyeti olmamasına rağmen, Dubai offshore şirketlerinin elde ettiği gelir oldukça fazla. Atalay’ın yazdığı e-postaya göre 2011’in sadece ilk altı ayında Çalık Dubai’de biriken para 34.7 milyon doları buluyor.
+    - Çalık, bu parayı Türkiye’ye getirmek istiyor. Ancak paranın Dubai’den yasal yollarla Türkiye’ye gelmesi, Çalık’ın getirdiği meblağ üzerinden Maliye’ye yüzde 20 vergi ödemesi anlamına geliyor. 
+    - O halde hiç vergi ödemeden milyon dolarlar Dubai’den Türkiye’ye nasıl getirilir? Bu görevi Çalık’ın Dış İlişkiler Sorumlusu Şafak Karaaslan üstleniyor. Karaaslan, Malta ve İsveç’i kapsayan bir şirketler ağı oluşturmaya karar veriyor.
+    - Çalık’ın planına göre, Dubai’deki milyonlar Malta’daki şirketlerin hesabına aktarılacak ve para üzerinden Malta Gelir İdaresi’ne yüzde 35 vergi ödenecek. Kağıt üstünde durum Türkiye’deki sistemden daha maliyetli. Ama bir detay var. Çalık’ın hissedarları Malta’da yaşamadığı ve şirket Malta’da kayda değer bir faaliyet yürütmediği için, şirket Malta Gelir İdaresi’ne ödediği verginin yüzde 80’inin iade edilmesini isteyebiliyor. Böylece ülkeye ödenecek vergi pratikte yüzde 5’e iniyor. 
+    - Para bu şekilde Avrupa Birliği sınırlarından girmiş oluyor. Bundan sonraki adım parayı İsveç’te bulunan hesaplara aktarmak. İsveç’e Malta’da yüzde 35 vergi ödendiği beyan edilecek, verginin büyük kısmının geri alındığı ise saklanacak. Böylece İsveç, Malta’da halihazırda yüksek seviyeden vergi ödendiğini düşünerek parayı ikinci kez vergilendirmeyecek.
+    - Son aşama, paranın Türkiye’ye gelmesi. İsveç’teki şirketlerden transfer edilen para, yüksek vergili ve offshore olmayan, finansal açıdan saygınlığı yüksek bir İskandinav ülkesinden geldiği için şüphe uyandırmayacak. Dolayısıyla Maliye paranın kaynağını sorgulamayacak.
+    - "Aşağıdaki grafik planı açıklıyor: "
+-
+  type: image-embed
+  data:
+    src: infographic-calik-holding-TR.png
+    class: larger
+-
+  type: text
+  data:
+    - "Dubai ofisindeki Atalay, Çalık’ı bu plandan vazgeçirmeye çalışıyor. Planın bir parçası da şirketin offshore faaliyetlerini Malta’ya taşımak. Atalay, bir yandan da Malta’ya taşınmak istemediği için Albayrak’a bu karmaşık vergi planından vazgeçilmesini, şirketlerin vergi ödemeden yurtdışındaki servetlerini Türkiye’ye getirmelerine imkan sağlayacak bir vergi affını beklemeleri gerektiğini söylüyor: “Abi burası Türkiye. Her zaman yeni bir vergi affı gelir. Gelmediği hiçbir dönem olmamıştır.”"
+    - "Bir ay sonra, 24 Ocak 2012’de Atalay, müdürü Karaaslan’a bir e-posta daha gönderiyor ve Malta’ya taşınma planından şikayet ediyor. Karaaslan, Atalay’ı tersliyor: “Şu an sadece gülüyorum ve bir şey söyleyemiyorum” diyor. “Şirket, menfaatine göre vergi planlaması vs.. yaparak mecburen bir karar alıyor. Buna böyle bakılır başka türlü değil.”"
+    - "Bu yazışmaları takip eden sene içinde Karaaslan işe koyuluyor. 2012’de İsveç’te dört yeni şirket kuruyor: Çalık Textile AB, Çalık Energy AB, Çalık Marketing AB and Çalık Construction AB. Daha sonra 2013’te, Malta’da sekiz şirket daha kuruyor: Fashion Zone Textile Holding Limited, Fashion Zone Textile Limited, Synergy Marketing Holding Limited, Synergy Marketing Limited, Technological Energy Holding Limited, Technological Energy Limited, White Construction Holding Limited, White Construction Limited."
+    - Malta ve İsveç’in sicil kayıtlarına göre bu şirketler şu anda aktif değil. İsveç’te bulunan Çalık Energy AB dışında hiçbirinin adı Çalık’ın yıllık finansal raporlarında geçmiyor. Çalık Energy AB ise gayrı-faal olarak listeleniyor.
+    - Görünen o ki bu Malta ve İsveç şirketleri hiçbir zaman aktif şekilde para transferi için kullanılmamış. Kayıtlar herhangi bir para hareketi göstermiyor.
+    - Sonunda Çalık bu karmaşık ve kanunlara uygunluğu tartışılır sistemi kullanmaya gerek görmüyor çünkü o sırada Berat Albayrak kariyer merdivenlerini başka mecralarda hızla tırmanıyor. 
+-
+  type: subheadline
+  data: Albayrak’ın yükselişi
+-
+  type: text
+  data:
+    - Berat Albayrak 2013 yılı sonunda, Malta şirketlerinin kurulmasından aylar sonra, politikaya atılacağı dedikoduları yayılırken Çalık Holding’den istifa etti. Temmuz 2015 seçimlerinde AKP’den İstanbul milletvekili seçildi ve Kasım ayında Enerji ve Tabii Kaynaklar Bakanı olarak atandı. 
+    - 2007’den politikaya atıldığı 2013’e kadar Albayrak, hükümete gitgide daha çok yakınlaşan ve aynı oranda zenginleşen bir şirketi yönetti. Albayrak’ın CEO olarak atanmasından bir yıl sonra Çalık, ihaleye giren tek şirket olarak ATV-Sabah’ı satın almış ve Erdoğan’ın Katarlı iş adamlarına ihalenin finansmanı için lobi yaptığı iddia edilmişti. 
+    - Politikayla ilgili bir geçmişi ya da deneyimi olmayan Albayrak, Kasım 2015’den beri Enerji Bakanlığı’nı yönetiyor. Kamuya hizmet etmesi beklenen Albayrak’ın eski şirketinin menfaatini düşünmekten de geri kalmadığı anlaşılıyor. 
+-
+  type: subheadline
+  data: Çalık’a meclisten vergi kıyağı
+-
+  type: text
+  data:
+    - Kabineye atanmasından beş ay sonra, Şafak Karaaslan’dan Albayrak’a bir e-posta gidiyor. Karaaslan, e-postaya “Paranın Yeniden Yeni Merkezi” adlı bir belge de ekliyor. Belge, Amerika’nın, kara para aklamayla mücadele için kurulan Common Reporting Standard adlı uluslararası bilgi paylaşımı sistemine dahil olmayı reddettiğinden bahsediyor. 
+    - Çalık’ın Dubai milyonlarını Türkiye’ye getirmesi için ideal zaman gelmiş gibi görünüyor. “Mevcut durumda yurtdışında servet sahiplerine iki seçenek kalmış oluyor” diyor Karaaslan. “Bir tanesi servetlerini ve portföylerini yeni vergi cenneti ABD’ye taşımak ... ya da servetlerini ülkelerine getirmek.”
+    - “Önceden uygulandığı gibi gizlilik öngören bir vergi barışının dizayn edilmesi ülkemizin vatandaşlarının servetlerini geri getirmesini, yurtdışı kredilerin azalması, bundan sonra uluslararası ticaretin kayıt altına alınmasını sağlayacaktır” diye ekliyor Karaaslan. “Zaman dar olduğu için ivedilikle hareket edilmelidir.” 
+    - Albayrak’ı ikna etmek için çok dil dökmeye gerek kalmıyor. Bir ay sonra, 3 Haziran 2016’da, Karaaslan Enerji Bakanı’na bir e-posta daha gönderiyor. Bu sefer ekinde meclise sunulmak üzere hazırlanmış vergi affı yasa tasarısı var. 
+    - "Karaaslan, eski iş arkadaşı ve yeni bakana yasa tasarısını anlatıyor. Aynı zamanda tasarının özellikle vurgulanması gereken ismini de söylüyor: Varlık Barışı. "
+    - “Bilindiği üzere OECD’ye bağlı ülkeler ile dünya çapında bugüne kadar vergi cenneti olarak anılan ülkeler de dahil olmak üzere Finansal Kurumlar Bilgi Değişim Anlaşması [Common Reporting Standard] imzalandı” diyor. “ABD istisnadır, ABD bu anlaşmaya imza koymuyor... Dünya ticareti ve banka hesapları büyük ihtimal ile ABD’ye kayacak... Türkiye bu durumu hem fırsata çevirebilir hem de vatandaşlarına bir çözüm yolu sunabilir. Bunu da bir varlık barışı ile sağlayabilir.”
+    - “Özellikle af kelimesini kullanmıyoruz” diye de ekliyor.
+    - "Karaaslan e-postalarında yasanın halka çok iyi anlatılması gerektiğini belirtiyor: “Varlık barışı kanunlaşmadan önce çok iyi tanıtım yapılmalı. Bilgi değişim anlaşmasından insanların ne şekilde mağdur olacağının çok iyi anlatılması, bir şekilde tedirgin edilmesi gerekir ki varlık barışını büyük bir memnuniyetle karşılasınlar ve varlıklarını transfer etmek için bunu bir fırsat olarak görsünler.”"
+    - "Albayrak’a gönderilen ve meclisten geçirilmesi istenen yasa tasarısı 2013’te çıkan vergi barışı kanununa çok benziyor. Ama Çalık’ın adamı Karaaslan tasarıyı kendine göre değiştirmeyi ihmal etmiyor: “Bu düzenlemenin [2013 yasası] genel hatlarıyla başarılı bir düzenleme olduğunu düşünmekle beraber eksik gördüğümüz ya da düzenlenmesi gereken noktalarda eklemeler yaparak aşağıda sunuyoruz.” "
+    - Kanun tasarısına göre, şirketler ve kişiler 2016 yılının son gününe kadar yurtdışındaki para veya altınlarını hiçbir soru sorulmadan ülkeye sokabiliyorlar. Buraya kadar tasarı 2013’te çıkarılan afla benzerlik gösteriyor. Ama Çalık’ın Karaaslan’ının elinde şekillenen tasarıda, normalde yurtdışından afla getirilen varlıkların üzerinden devletin aldığı yüzde 2’lik vergi bir anda sıfıra iniyor. Aynı zamanda, şirketler ve kişiler üçüncü bir kişiyi varlıkları kendi adlarına ülkeye sokmak için tayin edebiliyor, böylece paranın asıl sahibi gizlenebiliyor. Maliye’nin ya da devletin başka kurumlarının paranın kaynağıyla ilgili herhangi bir soruşturma ya da araştırma yapmayacağı da garanti altına alınıyor. 
+-
+  type: subheadline
+  data: "“Son hali. OK mi?”: Ve yasa meclise gelir"
+-
+  type: text
+  data:
+    - Haziran 2016’da, Albayrak, Maliye Bakanı Naci Ağbal ve Çalık’ın Karaaslan’ı arasında yasa tasarısıyla ilgili bir e-posta trafiği başlıyor. 6 Haziran’da Berat Albayrak, Karaaslan’ın gönderdiği belgeleri Naci Ağbal’a yolluyor.
+    - Hatta yasa, Erdoğan’a kadar ulaşıyor. Albayrak, 20 Haziran’da Erdoğan’ın özel kalem müdürü Hasan Doğan’a da tasarıyı gönderiyor.
+    - "21 Haziran 2016’da, Berat Albayrak yasa tasarısı taslağını Karaaslan’a yine e-postayla gönderiyor ve soruyor: “Son hali. OK mi?”"
+    - Bundan iki gün sonra Başbakan Yıldırım “Yatırım Ortamının İyileştirilmesi Amacıyla Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Tasarısı”nı TBMM’ye sunuyor. Tasarının içinde Varlık Barışı’nı içeren ve Karaaslan’ın yazdığı “Geçici Madde 2” de var. 
+    - Geçici Madde 2, yasa milletvekillerince tartışılmaya başladığı anda meclisi birbirine düşürmüştü. Muhalefet partileri önerilen Varlık Barışı’nın Türkiye’yi kara para merkezi haline getireceğini iddia etmişti. CHP, MHP ve HDP, eğer AKP bu maddeyi gündemden çekmezse tasarının diğer 77 maddesinin görüşmelerini  tıkayacaklarını söylemiş, AKP’yi maddenin kaldırılması için ikna etmeye çalışmıştı. 
+    - AKP sonunda ikna olmuş, Geçici Madde 2’yi yasa tasarısından kaldırmıştı. 14 Temmuz 2016’da, CHP milletvekili Özgür Özel bunu muhalefetin bir zaferi olarak ilan etmiş ve Varlık Barışı konusu bir daha meclis gündemine gelirse yine karşı duracaklarını söylemişti. 
+    - Muhalefetin zaferi çok uzun sürmeyecekti. Ertesi gün, 15 Temmuz darbe girişimi yaşandı. Darbe girişimini takip eden günlerde mecliste karmaşa hakimdi ve ekonomi gibi konular bir süreliğine geri planda kaldı. 
+    - Politik kaos, KHK’lar, toplu tutuklamalar ve işten atmalar arasında yine de Çalık Holding unutulmadı. 
+    - Darbe girişiminden bir hafta sonra, 22 Temmuz 2016’da, Varlık Barışı tasarısı bu sefer Madde 7 olarak Plan ve Bütçe Komisyonu tarafından “Bazı Alacakların Yeniden Yapılandırılmasına İlişkin Kanun” adlı yasa tasarısına eklendi. 
+    - Yeni madde Geçici Madde 2’nin daha kısa ve öz haliydi. Ancak metnin kendisi ve içeriği değişmemişti. Bu sefer tasarı meclisten kavga ve gürültü olmadan geçti. 
+    - 18 Ağustos’ta Cumhurbaşkanı Erdoğan’ın imzalaması ve ertesi gün Resmi Gazete’de yayınlanmasıyla, kara para aklamayı yasal hale getiren Varlık Barışı kanun haline gelmiş oldu. 
+    - CHP milletvekili Mehmet Bekaroğlu, konuyla ilgili The Black Sea’ye verdiği demeçte “Ekonomimiz dağıldı, her yerden para bulmaya çalışıyorlar, o yüzden bu yasa çıktı” dedi ve ekledi, “Maliye Bakanlığı’na bu konuyla ilgili çok soru sordum –ne kadar para geldi, paralar kimden geldi, Türkiye’de ne kadar süre durup tekrar para yurtdışına çıktı. Ama hiçbirine cevap gelmedi. Bu bilginin kendilerinde olmadığını söylüyorlar. Bu yasada bir problem olduğu açık.”
+    - Çalık Holding sorularımıza tek tek cevap vermedi ancak “İddialarınız doğru değildir ve bu iddiaları kesinlikle reddediyoruz. Grubumuz hiçbir zaman yasal olmayan işlere girmemiştir,” açıklamasını yaptı.
+    - Berat Albayrak ve Naci Ağbal sorularımıza yanıt vermedi.
+    - "<span class='disclaimer'>Fotoğraf: Albayrak, Enerji ve Tabii Kaynaklar Bakanliği</span>"
+-
+  type: footer
+  data:
+    language: tr

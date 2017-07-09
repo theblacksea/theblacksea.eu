@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/box2d.js"></script>
+		<script type="text/javascript" src="js/embox2d-helpers.js"></script>
+		<script type="text/javascript" src="js/d3.js"></script>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<!--<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>-->
+		<script type="text/javascript" src="js/underscore-min.js"></script>
+		<script type="text/javascript" src="js/icons.js"></script>
+		<script type="text/javascript" src="js/b2bubble.js"></script>
+        <script type="text/javascript" src="js/topojson.js"></script>
+        <script type="text/javascript" src="js/d3.v3.min.js"></script>
+<style>
+
+.homecountry {
+  fill: none;
+  stroke: #fff;
+  width:2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.countryInner {
+  fill: none;
+  stroke: #fff;
+  width:2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  opacity:0.8;
+}
+#homemap {background-image:url(icons/bgmap.png); width:350px;}
+#innermap { display: block; position:relative; top:0px;  left:0; width:350px; height:350px; background-image:url(icons/bgmap.png);}
+</style>
+</head>
+
+<body>
+<div id="homemap"></div>
+
+<script>
+function addmap(iso) {
+d3.selection.prototype.moveToFront = function() {
+  return this.each(function(){
+    this.parentNode.appendChild(this);
+  });
+};
+
+var width = 350,
+    height = 350, centered;
+var color = d3.scale.category10();
+var projection = d3.geo.mercator()
+    .translate([0, 0])
+    .scale((height / 2 / Math.PI)*20);
+
+/*var zoom = d3.behavior.zoom()
+    .scaleExtent([10, 11])
+    .on("zoom", move);
+*/
+var path = d3.geo.path()
+    .projection(projection);
+
+var svg = d3.select("#homemap").append("svg")
+   .attr ("id","innermap")
+   .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+	.style("margin-top", "100px")
+    /*.call(zoom);*/
+var g = svg.append("g");
+
+/*svg.append("rect")
+    .attr("class", "overlay")
+    .attr("x", -width / 2)
+    .attr("y", -height / 2)
+    .attr("width", width)
+    .attr("height", height);
+*/
+var maxflag= 20;
+var country="Slovenia";
+var valx, valy;
+d3.json("/media/tests/world-110m2.json", function(error, world) {
+  var countries = topojson.feature(world, world.objects.countries).features,
+      neighbors = topojson.neighbors(world.objects.countries.geometries);
+  g.selectAll("path")
+      .data(countries)
+    .enter().insert("path", ".graticule")
+      .attr("class", "countryInner")
+      .attr("d", path)
+      .style("fill", function(d, i) { 
+	 		//console.log(d);
+			
+				if(iso == d.id) {
+	 				//return color(d.color = d3.max(neighbors[i], function(n) { return countries[n].color; }) + 1 | 0); 
+					
+					return "#a23052";
+				}
+	  		
+			return "#275b8a";
+			//#d6e0f2
+ 		})
+		.style("opacity", function(d, i) { 
+	 		//console.log(d);
+			
+				if(iso == d.id) {
+	 				//return color(d.color = d3.max(neighbors[i], function(n) { return countries[n].color; }) + 1 | 0); 
+					
+					return "1";
+				}
+	  		
+			return "0.2";
+ 		})
+	 .style("background-image", function(d, i) { 
+			return "url(icons/bgmap.png)";
+ 		})		
+	g.selectAll('path').each(function(d) {
+		var centroid = path.centroid(d);
+		x = centroid[0];
+		y = centroid[1];
+		
+		if(iso == d.id) {
+			valx = -x;
+			valy = -y;
+			g.transition()
+			  .duration(750)
+			  .attr("transform", "scale(" + 1.5 + ")translate(" + valx + "," + valy + ")")
+			  .style("stroke-width", 1.5 / 1 + "px"); 
+			}
+		
+	})
+	});
+}
+addmap(705);
+</script>
+
+
+</body>
+</html>

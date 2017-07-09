@@ -1,0 +1,70 @@
+<div class='box' id='form-updateItem' style='display: none !important; '>
+    <form method='post' action='' style='margin: 0px;'>
+    <div class='box-header well'>
+        <h2>
+            <i class='icon-cog'></i>
+            Update Item
+        </h2>
+        <div class='box-icon'>
+            <input type='submit' name='addRecord' value='save Item' class='btn  btn-round' >
+            <input type='hidden' name='itemId' value='' id='id' >
+            <input type='hidden' name='methName' value='updateItem'>
+            <input type='hidden' name='modName' value='genAdmin'>
+            <a href='#' class='btn btn-round' onclick='fmw.toggle(\"#form-updateItem\"); return false;'>
+                <i class='icon-remove'></i>
+            </a>
+        </div>
+    </div>
+    <div class='box-content'>
+
+            <div class='ib' >
+                <p>Page Name</p>
+                <input id='name' type='text' name='name_en' value=''
+                       class='ivy-light addArticle' placeholder='page Name' />
+            </div>
+            <div class='ib' >
+                <p>Page Manager</p>
+                <select id='type' name='type'>
+                    <option value='freePage'>freePage</option>
+                    ".$this->Render_arrayFromStr($o->managers, '',
+                    " <option value='{~i}'>{~i}</option>"
+                    )."
+
+                </select>
+            </div>
+            <div class='ib' >
+                <p>Page Parent</p>
+                <select id='parents' name='idParent'>
+                    <option value='0'>No parents</option>
+                    ".$this->Render_itemsFromStr($o->allItems, '',
+                    " <option value='{~ao->id}'>{~ao->name_en}</option>"
+                    )."
+
+                </select>
+            </div>
+            <div class='ib' >
+                <p>.</p>
+                <span class='margin-10'>Menu route</span>
+                <input type='checkbox' name='idM' value='mroute' id='menus' />
+            </div>
+
+
+
+            <div class='clearfix'></div>
+            <legend>
+                <small>Options</small>
+            </legend>
+            <div class='ib' >
+                <p>DirectLink</p>
+                <input id='options_directLink' type='text' name='options[directLink]' value=''
+                       class='ivy-light addArticle' placeholder='directLink' />
+            </div>
+            <div class='ib' >
+               <p>.</p>
+               <span class='margin-10'>Not Editable</span>
+               <input type='checkbox' name='options[editable]' value='notEd'  id='options_editable'/>
+            </div>
+
+    </div>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+---
+#template: "page"
+template_file: "single"
+
+#requests:
+#  About:
+#    handlers: ["singleHandler"]
+#    template_file: "single"
+#    template: ""
+
+#assetsInc:
+#  js:
+#    -"/assets/hoverIntent/hoverIntent.minified.js"
+#    -"/assets/garand-sticky/jquery.sticky.js"

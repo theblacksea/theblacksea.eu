@@ -1,0 +1,6 @@
+#AuthType Basic
+#AuthName "This page"
+#AuthUserFile /var/www/virtual/theblacksea.eu/htdocs/football-leaks/.htpasswd
+#Require valid-user
+
+DirectoryIndex index.html
